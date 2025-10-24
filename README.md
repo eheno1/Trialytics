@@ -1,4 +1,4 @@
-# Biotech Trial Success Predictor MVP
+Trialytics - A Biotech Clinical Trials Prediction Application
 
 A machine learning system to predict the probability that Phase 2 or Phase 3 biotech clinical trials will meet their primary endpoints.
 
