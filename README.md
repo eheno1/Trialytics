@@ -101,7 +101,7 @@ biotech-trial-predictor/
 
 ## Disclaimer
 
-⚠️ **Not investment advice.** This tool is for informational and educational purposes only. Clinical trial outcomes are inherently uncertain and subject to many factors not captured in this model.
+**Not investment advice.** This tool is for informational and educational purposes only. Clinical trial outcomes are inherently uncertain and subject to many factors not captured in this model.
 
 ## License
 

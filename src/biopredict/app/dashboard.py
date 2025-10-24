@@ -1,6 +1,7 @@
 """Streamlit dashboard for biotech trial predictions."""
 import streamlit as st
 import pandas as pd
+import plotly.graph_objects as go
 from pathlib import Path
 import sys
 
@@ -9,12 +10,18 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from biopredict.config import PROCESSED_DATA_DIR
 from biopredict.model.train import load_predictions
+from biopredict.app.stock_utils import (
+    lookup_ticker, get_stock_data, get_stock_info,
+    format_price, format_large_number, get_period_label
+)
 
 
 def load_data() -> pd.DataFrame:
     """Load prediction data for dashboard."""
     try:
         df = load_predictions()
+        # Add ticker column
+        df['ticker'] = df['sponsor_name'].apply(lookup_ticker)
         return df
     except Exception as e:
         st.error(f"Error loading predictions: {e}")
@@ -27,15 +34,368 @@ def format_trial_url(nct_id: str) -> str:
     return f"https://clinicaltrials.gov/study/{nct_id}"
 
 
-def main():
-    """Main dashboard application."""
-    st.set_page_config(
-        page_title="Biotech Trial Success Predictor",
-        page_icon="🧬",
-        layout="wide"
+def get_rating(value: float, low_threshold: float, high_threshold: float, higher_better: bool = True) -> int:
+    """Convert a metric to a 1-5 rating.
+    
+    Args:
+        value: The metric value
+        low_threshold: Threshold for rating 1 (if higher_better) or 5 (if not)
+        high_threshold: Threshold for rating 5 (if higher_better) or 1 (if not)
+        higher_better: If True, higher values get better ratings
+        
+    Returns:
+        Rating from 1-5
+    """
+    if value is None:
+        return 3
+    
+    if higher_better:
+        if value >= high_threshold:
+            return 5
+        elif value >= (high_threshold + low_threshold) / 2:
+            return 4
+        elif value >= low_threshold:
+            return 3
+        elif value >= low_threshold / 2:
+            return 2
+        else:
+            return 1
+    else:
+        if value <= high_threshold:
+            return 5
+        elif value <= (high_threshold + low_threshold) / 2:
+            return 4
+        elif value <= low_threshold:
+            return 3
+        elif value <= low_threshold * 1.5:
+            return 2
+        else:
+            return 1
+
+
+def get_rating_color(rating: int) -> str:
+    """Get color for rating."""
+    colors = {
+        1: "#d32f2f",  # Red
+        2: "#f57c00",  # Orange
+        3: "#fbc02d",  # Yellow
+        4: "#689f38",  # Light green
+        5: "#388e3c",  # Green
+    }
+    return colors.get(rating, "#757575")
+
+
+def show_stock_chart(ticker: str, period: str):
+    """Display stock price chart."""
+    try:
+        df = get_stock_data(ticker, period)
+        
+        if df is None or df.empty:
+            st.warning(f"Unable to load stock data for {ticker}. This may be due to API rate limits or ticker availability.")
+            return
+    except Exception as e:
+        st.error(f"Error loading chart: {str(e)}")
+        return
+    
+    # Create candlestick chart
+    fig = go.Figure(data=[go.Candlestick(
+        x=df.index,
+        open=df['Open'],
+        high=df['High'],
+        low=df['Low'],
+        close=df['Close'],
+        name=ticker
+    )])
+    
+    fig.update_layout(
+        title=f"{ticker} Stock Price - {get_period_label(period)}",
+        yaxis_title="Price ($)",
+        xaxis_title="Date",
+        height=500,
+        template="plotly_white",
+        xaxis_rangeslider_visible=False
     )
     
-    st.title("🧬 Biotech Trial Success Predictor")
+    st.plotly_chart(fig, use_container_width=True)
+
+
+def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
+    """Display detailed company page with stock info and trials."""
+    st.title(f"{company_name}")
+    
+    # Get all trials for this company
+    company_trials = df_all[df_all['sponsor_name'] == company_name].copy()
+    
+    # Calculate aggregate probability
+    avg_prob = company_trials['probability'].mean()
+    bucket_counts = company_trials['bucket'].value_counts()
+    
+    # Header with company info
+    col1, col2, col3 = st.columns([2, 1, 1])
+    
+    with col1:
+        if ticker:
+            st.markdown(f"## **{company_name}** (${ticker})")
+        else:
+            st.markdown(f"## **{company_name}** (Private/Unknown Ticker)")
+    
+    with col2:
+        # Determine overall bucket based on average
+        if avg_prob >= 0.70:
+            overall_bucket = "High"
+        elif avg_prob >= 0.40:
+            overall_bucket = "Medium"
+        else:
+            overall_bucket = "Low"
+        st.markdown(f"### **Success Probability: {overall_bucket}**")
+    
+    with col3:
+        st.metric("Avg Probability", f"{avg_prob:.1%}")
+    
+    st.markdown("---")
+    
+    # Stock information (if ticker available)
+    if ticker:
+        st.subheader("Stock Information & Financials")
+        
+        info = get_stock_info(ticker)
+        
+        if info:
+            # Price metrics
+            st.markdown("#### Market Data")
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                current_price = info.get('currentPrice') or info.get('regularMarketPrice')
+                st.metric("Current Price", format_price(current_price))
+            
+            with col2:
+                prev_close = info.get('previousClose')
+                if current_price and prev_close:
+                    change_pct = ((current_price - prev_close) / prev_close) * 100
+                    st.metric("Daily Change", f"{change_pct:+.2f}%")
+                else:
+                    st.metric("Daily Change", "N/A")
+            
+            with col3:
+                market_cap = info.get('marketCap')
+                st.metric("Market Cap", format_large_number(market_cap))
+            
+            with col4:
+                volume = info.get('volume')
+                if volume:
+                    st.metric("Volume", f"{volume:,}")
+                else:
+                    st.metric("Volume", "N/A")
+            
+            # Financial metrics
+            st.markdown("#### Financial Health")
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                revenue = info.get('totalRevenue')
+                st.metric("Total Revenue", format_large_number(revenue))
+            
+            with col2:
+                profit_margin = info.get('profitMargins')
+                if profit_margin:
+                    rating = get_rating(profit_margin, 0.05, 0.15, higher_better=True)
+                    color = get_rating_color(rating)
+                    st.metric("Profit Margin", f"{profit_margin*100:.1f}%")
+                    st.markdown(f"<span style='color:{color}'>Rating: {rating}/5</span>", unsafe_allow_html=True)
+                else:
+                    st.metric("Profit Margin", "N/A")
+            
+            with col3:
+                debt_to_equity = info.get('debtToEquity')
+                if debt_to_equity:
+                    rating = get_rating(debt_to_equity, 100, 50, higher_better=False)
+                    color = get_rating_color(rating)
+                    st.metric("Debt/Equity", f"{debt_to_equity:.1f}")
+                    st.markdown(f"<span style='color:{color}'>Rating: {rating}/5</span>", unsafe_allow_html=True)
+                else:
+                    st.metric("Debt/Equity", "N/A")
+            
+            with col4:
+                cash = info.get('totalCash')
+                st.metric("Cash Position", format_large_number(cash))
+            
+            # Valuation metrics
+            st.markdown("#### Valuation Metrics")
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                pe_ratio = info.get('trailingPE')
+                st.metric("P/E Ratio", f"{pe_ratio:.2f}" if pe_ratio else "N/A")
+            
+            with col2:
+                peg_ratio = info.get('pegRatio')
+                st.metric("PEG Ratio", f"{peg_ratio:.2f}" if peg_ratio else "N/A")
+            
+            with col3:
+                price_to_book = info.get('priceToBook')
+                st.metric("Price/Book", f"{price_to_book:.2f}" if price_to_book else "N/A")
+            
+            with col4:
+                ev_to_revenue = info.get('enterpriseToRevenue')
+                st.metric("EV/Revenue", f"{ev_to_revenue:.2f}" if ev_to_revenue else "N/A")
+        
+        st.markdown("---")
+        
+        # Stock chart with timeframe selector
+        st.subheader("Stock Price Chart")
+        
+        timeframe_cols = st.columns(7)
+        timeframes = ["1mo", "3mo", "6mo", "1y", "2y", "5y", "max"]
+        timeframe_labels = ["1M", "3M", "6M", "1Y", "2Y", "5Y", "All"]
+        
+        # Create buttons for timeframe selection
+        selected_period = st.session_state.get('selected_period', '1y')
+        
+        for i, (period, label) in enumerate(zip(timeframes, timeframe_labels)):
+            with timeframe_cols[i]:
+                if st.button(label, key=f"tf_{period}_{company_name}"):
+                    st.session_state['selected_period'] = period
+                    selected_period = period
+        
+        show_stock_chart(ticker, selected_period)
+        
+        st.markdown("---")
+    else:
+        st.info("This company appears to be private or ticker information is not available.")
+        st.markdown("---")
+    
+    # Clinical trials for this company
+    st.subheader("Clinical Trials Portfolio")
+    
+    # Trial summary
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric("Total Trials", len(company_trials))
+    
+    with col2:
+        high_count = bucket_counts.get("High", 0)
+        st.metric("High Probability", high_count)
+    
+    with col3:
+        medium_count = bucket_counts.get("Medium", 0)
+        st.metric("Medium Probability", medium_count)
+    
+    with col4:
+        low_count = bucket_counts.get("Low", 0)
+        st.metric("Low Probability", low_count)
+    
+    # Trials table
+    st.markdown("##### Trials Details")
+    
+    display_trials = company_trials[[
+        'nct_id', 'brief_title', 'phase_num', 'condition',
+        'enrollment', 'probability', 'bucket', 'primary_completion_date'
+    ]].copy()
+    
+    display_trials.columns = [
+        'Trial ID', 'Title', 'Phase', 'Indication',
+        'Enrollment', 'Probability', 'Bucket', 'Completion Date'
+    ]
+    
+    display_trials['Probability'] = display_trials['Probability'].apply(lambda x: f"{x:.1%}")
+    display_trials['Phase'] = display_trials['Phase'].apply(lambda x: f"Phase {int(x)}")
+    display_trials = display_trials.sort_values('Probability', ascending=False)
+    
+    st.dataframe(display_trials, use_container_width=True, height=400)
+    
+    # Valuation Analysis Section
+    if ticker and info:
+        st.markdown("---")
+        
+        # Determine valuation assessment
+        pe_ratio = info.get('trailingPE')
+        industry_pe = 20  # Biotech industry average approximation
+        ev_to_revenue = info.get('enterpriseToRevenue')
+        
+        valuation_score = 0
+        total_metrics = 0
+        
+        if pe_ratio:
+            total_metrics += 1
+            if pe_ratio < industry_pe * 0.8:
+                valuation_score += 1  # Undervalued
+            elif pe_ratio > industry_pe * 1.2:
+                valuation_score -= 1  # Overvalued
+        
+        if ev_to_revenue:
+            total_metrics += 1
+            if ev_to_revenue < 3:
+                valuation_score += 1
+            elif ev_to_revenue > 8:
+                valuation_score -= 1
+        
+        # Determine rating
+        if total_metrics > 0:
+            avg_score = valuation_score / total_metrics
+            if avg_score > 0.3:
+                valuation_rating = "Underperform"
+                explanation = "The company appears overvalued compared to industry peers."
+            elif avg_score < -0.3:
+                valuation_rating = "Outperform"
+                explanation = "The company appears undervalued, presenting potential upside."
+            else:
+                valuation_rating = "Market Perform"
+                explanation = "The company is fairly valued relative to industry benchmarks."
+        else:
+            valuation_rating = "Market Perform"
+            explanation = "Insufficient data for comprehensive valuation analysis."
+        
+        st.subheader(f"Valuation Analysis: {valuation_rating}")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("##### Valuation Metrics vs Industry")
+            if pe_ratio:
+                st.write(f"**P/E Ratio:** {pe_ratio:.2f} (Industry avg: ~{industry_pe})")
+                if pe_ratio < industry_pe:
+                    st.success("Below industry average - potentially undervalued")
+                elif pe_ratio > industry_pe * 1.2:
+                    st.warning("Above industry average - potentially overvalued")
+                else:
+                    st.info("In line with industry average")
+            
+            if ev_to_revenue:
+                st.write(f"**EV/Revenue:** {ev_to_revenue:.2f} (Biotech range: 2-8)")
+                if ev_to_revenue < 3:
+                    st.success("Low multiple - efficient valuation")
+                elif ev_to_revenue > 8:
+                    st.warning("High multiple - premium valuation")
+                else:
+                    st.info("Moderate valuation multiple")
+        
+        with col2:
+            st.markdown("##### Assessment")
+            st.write(explanation)
+            
+            # Trial success impact
+            if avg_prob >= 0.70:
+                st.write("**Pipeline Strength:** High trial success probability could drive upside.")
+            elif avg_prob >= 0.40:
+                st.write("**Pipeline Strength:** Moderate trial success probability.")
+            else:
+                st.write("**Pipeline Strength:** Lower trial success probability may pressure valuation.")
+            
+            st.info("**Note:** This is a simplified analysis. Full valuation requires detailed financial modeling, peer comparison, and market analysis.")
+    
+    # Back button
+    st.markdown("---")
+    if st.button("Back to All Trials"):
+        st.session_state['view'] = 'main'
+        st.session_state['selected_company'] = None
+        st.rerun()
+
+
+def show_main_view():
+    """Display main trials table view."""
+    st.title("Biotech Trial Success Predictor")
     st.markdown("Predicting Phase 2 & 3 clinical trial success probabilities")
     
     # Load data
@@ -52,6 +412,17 @@ python scripts/train_model.py
     
     # Sidebar filters
     st.sidebar.header("Filters")
+    
+    # Company type filter - PROMINENT at top
+    public_company_count = df["ticker"].notna().sum()
+    total_trials = len(df)
+    st.sidebar.markdown("### Company Type")
+    show_public_only = st.sidebar.checkbox(
+        f"Show only public companies ({public_company_count} of {total_trials} trials)",
+        value=False,
+        help="Filter to show only trials from publicly traded biotech/pharma companies with stock tickers"
+    )
+    st.sidebar.markdown("---")
     
     # Phase filter
     phase_options = ["All"] + sorted(df["phase_num"].unique().tolist())
@@ -93,6 +464,9 @@ python scripts/train_model.py
             df_filtered["condition"].str.contains(indication_search, case=False, na=False)
         ]
     
+    if show_public_only:
+        df_filtered = df_filtered[df_filtered["ticker"].notna()]
+    
     # Summary metrics
     st.markdown("---")
     col1, col2, col3, col4 = st.columns(4)
@@ -117,6 +491,10 @@ python scripts/train_model.py
     # Main table
     st.subheader("Clinical Trials")
     
+    # Show active filters
+    if show_public_only:
+        st.info(f"**Showing {len(df_filtered)} trials from publicly traded companies only** (Filter active in sidebar)")
+    
     if len(df_filtered) == 0:
         st.info("No trials match the selected filters.")
         return
@@ -124,6 +502,7 @@ python scripts/train_model.py
     # Prepare display DataFrame
     display_df = df_filtered[[
         "sponsor_name",
+        "ticker",
         "nct_id",
         "brief_title",
         "phase_num",
@@ -136,6 +515,7 @@ python scripts/train_model.py
     # Rename columns for display
     display_df.columns = [
         "Company",
+        "Ticker",
         "Trial ID",
         "Title",
         "Phase",
@@ -145,8 +525,8 @@ python scripts/train_model.py
         "Primary Completion Date",
     ]
     
-    # Add ticker placeholder
-    display_df.insert(1, "Ticker", "N/A")
+    # Fill N/A for missing tickers
+    display_df["Ticker"] = display_df["Ticker"].fillna("N/A")
     
     # Format probability as percentage
     display_df["Probability"] = display_df["Probability"].apply(lambda x: f"{x:.1%}")
@@ -157,73 +537,70 @@ python scripts/train_model.py
     # Sort by probability (descending)
     display_df = display_df.sort_values("Probability", ascending=False)
     
-    # Display table with color coding
-    def highlight_bucket(row):
-        """Color code rows by bucket."""
-        if row["Bucket"] == "High":
-            return ["background-color: #d4edda"] * len(row)
-        elif row["Bucket"] == "Medium":
-            return ["background-color: #fff3cd"] * len(row)
-        else:
-            return ["background-color: #f8d7da"] * len(row)
+    # Display table with clickable companies
+    st.markdown("**Tip:** Select a company below to view detailed stock information and trial portfolio")
+    st.dataframe(display_df, use_container_width=True, height=600)
     
-    styled_df = display_df.style.apply(highlight_bucket, axis=1)
-    st.dataframe(styled_df, use_container_width=True, height=600)
-    
-    # Detail view
+    # Company selection for detail view
     st.markdown("---")
-    st.subheader("Trial Details")
+    st.subheader("View Company Details")
     
-    # Trial selection
-    trial_ids = df_filtered["nct_id"].tolist()
-    if trial_ids:
-        selected_trial = st.selectbox(
-            "Select a trial to view details:",
-            options=trial_ids,
-            format_func=lambda x: f"{x} - {df_filtered[df_filtered['nct_id'] == x]['brief_title'].iloc[0][:60]}..."
-        )
-        
-        if selected_trial:
-            trial_data = df_filtered[df_filtered["nct_id"] == selected_trial].iloc[0]
-            
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                st.markdown("**Trial Information**")
-                st.write(f"**Trial ID:** {trial_data['nct_id']}")
-                st.write(f"**Title:** {trial_data['brief_title']}")
-                st.write(f"**Sponsor:** {trial_data['sponsor_name']}")
-                st.write(f"**Phase:** Phase {int(trial_data['phase_num'])}")
-                st.write(f"**Indication:** {trial_data['condition']}")
-                st.write(f"**Primary Completion:** {trial_data['primary_completion_date']}")
-                
-                trial_url = format_trial_url(trial_data['nct_id'])
-                st.markdown(f"**Source:** [ClinicalTrials.gov]({trial_url})")
-            
-            with col2:
-                st.markdown("**Prediction**")
-                st.write(f"**Probability:** {trial_data['probability']:.1%}")
-                st.write(f"**Bucket:** {trial_data['bucket']}")
-                
-                st.markdown("**Feature Values**")
-                st.write(f"- Phase Number: {trial_data['phase_num']}")
-                st.write(f"- Is Phase 3: {trial_data['is_phase3']}")
-                st.write(f"- Enrollment: {int(trial_data['enrollment'])}")
-                st.write(f"- Sites: {int(trial_data['sites'])}")
-                st.write(f"- Indication Prior: {trial_data['indication_prior']:.2f}")
+    # Get unique companies with their tickers
+    companies = df_filtered[['sponsor_name', 'ticker']].drop_duplicates().sort_values('sponsor_name')
+    company_list = companies['sponsor_name'].tolist()
+    
+    selected_company = st.selectbox(
+        "Select a company to view detailed information:",
+        options=company_list,
+        format_func=lambda x: f"{x} ({companies[companies['sponsor_name'] == x]['ticker'].iloc[0] if companies[companies['sponsor_name'] == x]['ticker'].iloc[0] else 'Private'})"
+    )
+    
+    if st.button("View Company Details"):
+        company_ticker = companies[companies['sponsor_name'] == selected_company]['ticker'].iloc[0]
+        st.session_state['view'] = 'company'
+        st.session_state['selected_company'] = selected_company
+        st.session_state['selected_ticker'] = company_ticker if pd.notna(company_ticker) else None
+        st.rerun()
     
     # Disclaimer
     st.markdown("---")
-    st.warning("⚠️ **Disclaimer:** Not investment advice. For informational purposes only.")
+    st.warning("**Disclaimer:** Not investment advice. For informational purposes only.")
     
     # Footer
     st.markdown("""
     <div style='text-align: center; color: gray; padding: 20px;'>
-        Biotech Trial Success Predictor MVP | Data from ClinicalTrials.gov
+        Biotech Trial Success Predictor MVP | Data from ClinicalTrials.gov & Yahoo Finance
     </div>
     """, unsafe_allow_html=True)
 
 
+def main():
+    """Main dashboard application."""
+    st.set_page_config(
+        page_title="Biotech Trial Success Predictor",
+        page_icon="",
+        layout="wide"
+    )
+    
+    # Initialize session state
+    if 'view' not in st.session_state:
+        st.session_state['view'] = 'main'
+    if 'selected_company' not in st.session_state:
+        st.session_state['selected_company'] = None
+    if 'selected_ticker' not in st.session_state:
+        st.session_state['selected_ticker'] = None
+    
+    # Route to appropriate view
+    if st.session_state['view'] == 'company' and st.session_state['selected_company']:
+        df_all = load_data()
+        show_company_detail(
+            st.session_state['selected_company'],
+            st.session_state['selected_ticker'],
+            df_all
+        )
+    else:
+        show_main_view()
+
+
 if __name__ == "__main__":
     main()
-

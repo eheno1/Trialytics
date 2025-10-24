@@ -27,9 +27,9 @@ def main():
     for file in raw_files:
         path = RAW_DATA_DIR / file
         if path.exists():
-            print(f"  ✓ {file}")
+            print(f"  [OK] {file}")
         else:
-            print(f"  ✗ {file} - MISSING")
+            print(f"  [MISSING] {file}")
             errors.append(f"Missing raw data: {file}")
     
     # Check processed data files
@@ -43,18 +43,18 @@ def main():
         path = PROCESSED_DATA_DIR / file
         if path.exists():
             df = pd.read_parquet(path)
-            print(f"  ✓ {file} ({len(df)} rows)")
+            print(f"  [OK] {file} ({len(df)} rows)")
         else:
-            print(f"  ✗ {file} - MISSING")
+            print(f"  [MISSING] {file}")
             errors.append(f"Missing processed data: {file}")
     
     # Check model file
     print("\n[3/4] Checking model file...")
     if MODEL_PATH.exists():
         model = joblib.load(MODEL_PATH)
-        print(f"  ✓ model.pkl (type: {type(model).__name__})")
+        print(f"  [OK] model.pkl (type: {type(model).__name__})")
     else:
-        print(f"  ✗ model.pkl - MISSING")
+        print(f"  [MISSING] model.pkl")
         errors.append("Missing model file")
     
     # Check predictions quality
@@ -66,10 +66,10 @@ def main():
         required_cols = ["nct_id", "sponsor_name", "brief_title", "probability", "bucket"]
         missing_cols = [col for col in required_cols if col not in df_pred.columns]
         if missing_cols:
-            print(f"  ✗ Missing columns: {missing_cols}")
+            print(f"  [MISSING] Columns: {missing_cols}")
             errors.append(f"Missing columns: {missing_cols}")
         else:
-            print(f"  ✓ All required columns present")
+            print(f"  [OK] All required columns present")
         
         # Check bucket distribution
         bucket_counts = df_pred["bucket"].value_counts()
@@ -87,13 +87,13 @@ def main():
             print(f"    Title: {sample['brief_title'][:60]}...")
             print(f"    Probability: {sample['probability']:.1%}")
             print(f"    Bucket: {sample['bucket']}")
-            print(f"  ✓ At least one trial with probability and bucket")
+            print(f"  [OK] At least one trial with probability and bucket")
         else:
-            print(f"  ✗ No high-probability trials found")
+            print(f"  [FAIL] No high-probability trials found")
             errors.append("No high-probability trials")
             
     except Exception as e:
-        print(f"  ✗ Error checking predictions: {e}")
+        print(f"  [ERROR] Error checking predictions: {e}")
         errors.append(f"Prediction check error: {e}")
     
     # Summary
@@ -105,13 +105,13 @@ def main():
             print(f"  - {error}")
         return 1
     else:
-        print("VALIDATION PASSED ✓")
+        print("VALIDATION PASSED")
         print("="*60)
         print("\nAll requirements met:")
-        print("  ✓ Data fetched from ClinicalTrials.gov")
-        print("  ✓ Model trained and saved")
-        print("  ✓ Predictions generated")
-        print("  ✓ At least one trial with probability and bucket")
+        print("  [OK] Data fetched from ClinicalTrials.gov")
+        print("  [OK] Model trained and saved")
+        print("  [OK] Predictions generated")
+        print("  [OK] At least one trial with probability and bucket")
         print("\nReady to launch dashboard:")
         print("  streamlit run src/biopredict/app/dashboard.py")
         return 0
