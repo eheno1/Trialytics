@@ -395,7 +395,13 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
 
 def show_main_view():
     """Display main trials table view."""
-    st.title("Biotech Trial Success Predictor")
+    # Display logo
+    logo_path = Path(__file__).parent.parent.parent.parent / "logo" / "logo.png"
+    if logo_path.exists():
+        st.image(str(logo_path), use_container_width=False, width=400)
+    else:
+        st.title("Biotech Trial Success Predictor")
+    
     st.markdown("Predicting Phase 2 & 3 clinical trial success probabilities")
     
     # Load data
