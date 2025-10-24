@@ -1,0 +1,3502 @@
+[
+  {
+    "nct_id": "NCT00848393",
+    "sponsor": "Nationwide Children's Hospital",
+    "completion_date": "2013-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00853021",
+    "sponsor": "Jorge A. Garcia, MD",
+    "completion_date": "2009-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01030614",
+    "sponsor": "Instituto Mexicano del Seguro Social",
+    "completion_date": "2008-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01009814",
+    "sponsor": "ViiV Healthcare",
+    "completion_date": "2010-06-25",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03267316",
+    "sponsor": "Cantargia AB",
+    "completion_date": "2024-03-14",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06525506",
+    "sponsor": "Innovent Biologics (Suzhou) Co. Ltd.",
+    "completion_date": "2025-01-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00312884",
+    "sponsor": "Imperial College London",
+    "completion_date": "2008-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02953652",
+    "sponsor": "HUYABIO International, LLC.",
+    "completion_date": "2022-02-17",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04668352",
+    "sponsor": "Restorbio Inc.",
+    "completion_date": "2019-12-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00002447",
+    "sponsor": "Hoffmann-La Roche",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01080547",
+    "sponsor": "Zhejiang University",
+    "completion_date": "2014-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04700449",
+    "sponsor": "Connect Biopharm LLC",
+    "completion_date": "2022-02-23",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02762838",
+    "sponsor": "Biocad",
+    "completion_date": "2018-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03915938",
+    "sponsor": "Hospital de Clinicas de Porto Alegre",
+    "completion_date": "2017-11-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01234558",
+    "sponsor": "Naurex, Inc, an affiliate of Allergan plc",
+    "completion_date": "2012-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00383058",
+    "sponsor": "Taipei City Hospital",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01543958",
+    "sponsor": "Advancing Clinical Therapeutics Globally for HIV/AIDS and Other Infections",
+    "completion_date": "2012-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00482248",
+    "sponsor": "Novartis",
+    "completion_date": "2006-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01174355",
+    "sponsor": "NeuroDerm Ltd.",
+    "completion_date": "2017-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01410955",
+    "sponsor": "Monsea Ltd.",
+    "completion_date": "2013-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00482755",
+    "sponsor": "NCIC Clinical Trials Group",
+    "completion_date": "2010-03-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03820726",
+    "sponsor": "Boehringer Ingelheim",
+    "completion_date": "2022-08-30",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05433285",
+    "sponsor": "PT Bio Farma",
+    "completion_date": "2022-08-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04270643",
+    "sponsor": "Queen Mary University of London",
+    "completion_date": "2024-06-30",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03127215",
+    "sponsor": "National Center for Tumor Diseases, Heidelberg",
+    "completion_date": "2023-12-19",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00617617",
+    "sponsor": "H. Lee Moffitt Cancer Center and Research Institute",
+    "completion_date": "2007-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05301517",
+    "sponsor": "FibroGen",
+    "completion_date": "2023-04-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01968317",
+    "sponsor": "Xiaojun Chen",
+    "completion_date": "2017-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01885117",
+    "sponsor": "Novartis Vaccines",
+    "completion_date": "2013-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00758589",
+    "sponsor": "AstraZeneca",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00232089",
+    "sponsor": "Novartis",
+    "completion_date": "2006-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00765440",
+    "sponsor": "Centre Antoine Lacassagne",
+    "completion_date": "2009-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00463450",
+    "sponsor": "Bayer",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02148250",
+    "sponsor": "University of Minnesota",
+    "completion_date": "2017-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02912650",
+    "sponsor": "Pfizer",
+    "completion_date": "2016-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03526250",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2023-03-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03501550",
+    "sponsor": "Cocrystal Pharma, Inc.",
+    "completion_date": "2019-01-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01452750",
+    "sponsor": "Takeda",
+    "completion_date": "2013-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03509662",
+    "sponsor": "Amsterdam UMC, location VUmc",
+    "completion_date": "2024-02-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00329446",
+    "sponsor": "AstraZeneca",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01534403",
+    "sponsor": "UCB Pharma",
+    "completion_date": "2015-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00289627",
+    "sponsor": "Bristol-Myers Squibb",
+    "completion_date": "2007-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00086827",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2006-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00064727",
+    "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00326027",
+    "sponsor": "Nycomed",
+    "completion_date": "2007-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00132470",
+    "sponsor": "Axaron Bioscience AG",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02250573",
+    "sponsor": "Bio Products Laboratory",
+    "completion_date": "2006-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00301873",
+    "sponsor": "Duke University",
+    "completion_date": "2011-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01029873",
+    "sponsor": "Altor BioScience",
+    "completion_date": "2011-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00000254",
+    "sponsor": "University of Chicago",
+    "completion_date": "1995-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02595905",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2025-01-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02462122",
+    "sponsor": "Bausch Health Americas, Inc.",
+    "completion_date": "2016-11-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01934829",
+    "sponsor": "Chinese Anti-Cancer Association",
+    "completion_date": "2010-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00504829",
+    "sponsor": "Veloxis Pharmaceuticals",
+    "completion_date": "2008-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05451329",
+    "sponsor": "VivaVision Biotech, Inc",
+    "completion_date": "2022-12-22",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02490631",
+    "sponsor": "Vanderbilt University",
+    "completion_date": "2018-12-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02998931",
+    "sponsor": "Shahid Beheshti University",
+    "completion_date": "2018-08-25",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00003631",
+    "sponsor": "Memorial Sloan Kettering Cancer Center",
+    "completion_date": "2010-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00239902",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2004-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00249353",
+    "sponsor": "McNeil Consumer & Specialty Pharmaceuticals, a Division of McNeil-PPC, Inc.",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00361153",
+    "sponsor": "Daiichi Sankyo",
+    "completion_date": "2006-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00651937",
+    "sponsor": "M.D. Anderson Cancer Center",
+    "completion_date": "2016-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00516737",
+    "sponsor": "Organon and Co",
+    "completion_date": "2008-04-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02292537",
+    "sponsor": "Biogen",
+    "completion_date": "2017-02-20",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02626572",
+    "sponsor": "Institut de Recherches Internationales Servier",
+    "completion_date": "2017-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00364572",
+    "sponsor": "Johns Hopkins University",
+    "completion_date": "2007-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00004195",
+    "sponsor": "University of Alabama at Birmingham",
+    "completion_date": "1999-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04933695",
+    "sponsor": "Amgen",
+    "completion_date": "2025-05-27",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02351739",
+    "sponsor": "Acerta Pharma BV",
+    "completion_date": "2018-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01468077",
+    "sponsor": "Hoffmann-La Roche",
+    "completion_date": "2013-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00238745",
+    "sponsor": "Wyeth is now a wholly owned subsidiary of Pfizer",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01612845",
+    "sponsor": "Hospital Universitario La Paz",
+    "completion_date": "2009-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02160145",
+    "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+    "completion_date": "2017-04-18",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04527575",
+    "sponsor": "Federal Budgetary Research Institution State Research Center of Virology and Biotechnology \"Vector\"",
+    "completion_date": "2021-12-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02360475",
+    "sponsor": "GlaxoSmithKline",
+    "completion_date": "2015-07-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02442375",
+    "sponsor": "Radboud University Medical Center",
+    "completion_date": "2024-03-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00179257",
+    "sponsor": "Vanderbilt University",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06510257",
+    "sponsor": "Dexa Medica Group",
+    "completion_date": "2024-09-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03663101",
+    "sponsor": "Ipsen",
+    "completion_date": "2019-11-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01954381",
+    "sponsor": "Assistance Publique Hopitaux De Marseille",
+    "completion_date": "2014-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01338701",
+    "sponsor": "Samueli Institute for Information Biology",
+    "completion_date": "2015-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02827201",
+    "sponsor": "Federation Francophone de Cancerologie Digestive",
+    "completion_date": "2017-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02457819",
+    "sponsor": "Sumitomo Pharma America, Inc.",
+    "completion_date": "2017-02-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00484198",
+    "sponsor": "Daiichi Sankyo",
+    "completion_date": "2009-02-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05021263",
+    "sponsor": "Thomas Jefferson University",
+    "completion_date": "2023-12-29",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00046787",
+    "sponsor": "Astellas Pharma Inc",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00148863",
+    "sponsor": "French National Agency for Research on AIDS and Viral Hepatitis",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00654121",
+    "sponsor": "AZ-VUB",
+    "completion_date": "2004-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04393493",
+    "sponsor": "Hospital Civil de Guadalajara",
+    "completion_date": "2020-04-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00037921",
+    "sponsor": "US Department of Veterans Affairs",
+    "completion_date": "2003-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03414814",
+    "sponsor": "Seoul National University Hospital",
+    "completion_date": "2021-08-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01676714",
+    "sponsor": "University of California, Davis",
+    "completion_date": "2016-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00000214",
+    "sponsor": "New York State Psychiatric Institute",
+    "completion_date": "1993-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00003216",
+    "sponsor": "Radiation Therapy Oncology Group",
+    "completion_date": "2005-10",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00064116",
+    "sponsor": "NCIC Clinical Trials Group",
+    "completion_date": "2010-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00687804",
+    "sponsor": "Novartis",
+    "completion_date": "2010-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03003884",
+    "sponsor": "Jiangsu HengRui Medicine Co., Ltd.",
+    "completion_date": "2017-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01119833",
+    "sponsor": "GlycoMimetics Incorporated",
+    "completion_date": "2012-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00440947",
+    "sponsor": "ViiV Healthcare",
+    "completion_date": "2010-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01458249",
+    "sponsor": "Eisai Co., Ltd.",
+    "completion_date": "2014-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02011438",
+    "sponsor": "University of Miami",
+    "completion_date": "2015-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00317538",
+    "sponsor": "Centocor Ortho Biotech Services, L.L.C.",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01969838",
+    "sponsor": "Sierra Oncology LLC - a GSK company",
+    "completion_date": "2016-09-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00628758",
+    "sponsor": "AstraZeneca",
+    "completion_date": "2008-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03296748",
+    "sponsor": "Kasr El Aini Hospital",
+    "completion_date": "2017-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00055978",
+    "sponsor": "University of California, Los Angeles",
+    "completion_date": "2008-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02701985",
+    "sponsor": "Hoffmann-La Roche",
+    "completion_date": "2017-07-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02269943",
+    "sponsor": "Celgene",
+    "completion_date": "2017-04-20",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05400915",
+    "sponsor": "Yonsei University",
+    "completion_date": "2021-12-13",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00639743",
+    "sponsor": "Assistance Publique - H\u00f4pitaux de Paris",
+    "completion_date": "2012-07-26",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02981615",
+    "sponsor": "Sheba Medical Center",
+    "completion_date": "2022-07-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03097835",
+    "sponsor": "Steve Yoelin M.D. Medical Associates, Inc.",
+    "completion_date": "2018-07-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00038935",
+    "sponsor": "Wyeth is now a wholly owned subsidiary of Pfizer",
+    "completion_date": "2003-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01180335",
+    "sponsor": "Gustave Roussy, Cancer Campus, Grand Paris",
+    "completion_date": "2010-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04669808",
+    "sponsor": "Sirnaomics",
+    "completion_date": "2023-02-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02969525",
+    "sponsor": "UCB Biopharma S.P.R.L.",
+    "completion_date": "2017-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00177476",
+    "sponsor": "University of Pittsburgh",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00004276",
+    "sponsor": "National Center for Research Resources (NCRR)",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01206140",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2015-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02353689",
+    "sponsor": "Oh Yoen Kim",
+    "completion_date": "2014-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02023268",
+    "sponsor": "Laboratoires Thea",
+    "completion_date": "2014-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01197040",
+    "sponsor": "Assistance Publique - H\u00f4pitaux de Paris",
+    "completion_date": "2014-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04548440",
+    "sponsor": "Sun Yat-sen University",
+    "completion_date": "2022-12-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05465889",
+    "sponsor": "Changhai Hospital",
+    "completion_date": "2020-01-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04956289",
+    "sponsor": "NS Pharma, Inc.",
+    "completion_date": "2023-06-20",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05204589",
+    "sponsor": "Jiangsu Province Centers for Disease Control and Prevention",
+    "completion_date": "2022-04-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00423098",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2009-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03387787",
+    "sponsor": "Insel Gruppe AG, University Hospital Bern",
+    "completion_date": "2020-01-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01057693",
+    "sponsor": "Pfizer's Upjohn has merged with Mylan to form Viatris Inc.",
+    "completion_date": "2012-01-30",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03291314",
+    "sponsor": "Universitair Ziekenhuis Brussel",
+    "completion_date": "2019-01-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01410916",
+    "sponsor": "Alexion Pharmaceuticals, Inc.",
+    "completion_date": "2012-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03174184",
+    "sponsor": "Johns Hopkins University",
+    "completion_date": "2022-05-13",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00351884",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2007-11",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02206152",
+    "sponsor": "University of Minnesota",
+    "completion_date": "2017-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02866747",
+    "sponsor": "Institut Claudius Regaud",
+    "completion_date": "2024-11-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02956447",
+    "sponsor": "Massachusetts General Hospital",
+    "completion_date": "2023-06-28",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00140647",
+    "sponsor": "Gerstein, Hertzel, MD",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00803647",
+    "sponsor": "NSABP Foundation Inc",
+    "completion_date": "2013-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00542048",
+    "sponsor": "MediGene",
+    "completion_date": "2009-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00869726",
+    "sponsor": "Eli Lilly and Company",
+    "completion_date": "2009-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00872326",
+    "sponsor": "Andalusian Network for Design and Translation of Advanced Therapies",
+    "completion_date": "2009-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00185978",
+    "sponsor": "Stanford University",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04392778",
+    "sponsor": "SB\u00dc Dr. Sadi Konuk E\u011fitim ve Ara\u015ft\u0131rma Hastanesi",
+    "completion_date": "2020-11-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01459185",
+    "sponsor": "Tomoshi Tsuchiya",
+    "completion_date": "2008-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02930876",
+    "sponsor": "King's College London",
+    "completion_date": "2017-02-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00596817",
+    "sponsor": "H. Lundbeck A/S",
+    "completion_date": "2009-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00260117",
+    "sponsor": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+    "completion_date": "2008-03",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02156440",
+    "sponsor": "KGK Science Inc.",
+    "completion_date": "2012-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00002768",
+    "sponsor": "Alliance for Clinical Trials in Oncology",
+    "completion_date": "2003-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02506868",
+    "sponsor": "Biocad",
+    "completion_date": "2017-01-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01675791",
+    "sponsor": "ALK-Abell\u00f3 A/S",
+    "completion_date": "2013-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00660491",
+    "sponsor": "Norwegian University of Science and Technology",
+    "completion_date": "2008-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04309474",
+    "sponsor": "AbbVie",
+    "completion_date": "2024-04-18",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02135874",
+    "sponsor": "M.D. Anderson Cancer Center",
+    "completion_date": "2023-02-21",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01324518",
+    "sponsor": "Orion Corporation, Orion Pharma",
+    "completion_date": "2012-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00070018",
+    "sponsor": "SWOG Cancer Research Network",
+    "completion_date": "2010-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00003887",
+    "sponsor": "Fred Hutchinson Cancer Center",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02141321",
+    "sponsor": "Ain Shams University",
+    "completion_date": "2015-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00075114",
+    "sponsor": "University of Michigan",
+    "completion_date": "2002-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00006006",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2005-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03343704",
+    "sponsor": "Boehringer Ingelheim",
+    "completion_date": "2020-07-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00459706",
+    "sponsor": "Pfizer",
+    "completion_date": "2009-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01968733",
+    "sponsor": "Melinta Therapeutics, Inc.",
+    "completion_date": "2015-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00583947",
+    "sponsor": "Sumitomo Pharma America, Inc.",
+    "completion_date": "2008-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02155049",
+    "sponsor": "Rabin Medical Center",
+    "completion_date": "2017-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04274049",
+    "sponsor": "Beijing Northland Biotech. Co., Ltd.",
+    "completion_date": "2023-12-23",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02203149",
+    "sponsor": "Merck Sharp & Dohme LLC",
+    "completion_date": "2015-10-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00311948",
+    "sponsor": "Kaiser Permanente",
+    "completion_date": "2010-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00647348",
+    "sponsor": "Imperial College London",
+    "completion_date": "2011-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01485926",
+    "sponsor": "Cancer Trials Ireland",
+    "completion_date": "2014-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00481455",
+    "sponsor": "CASI Pharmaceuticals, Inc.",
+    "completion_date": "2007-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02531126",
+    "sponsor": "Celgene",
+    "completion_date": "2024-12-19",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00067626",
+    "sponsor": "Griffin Hospital",
+    "completion_date": "2009-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00626678",
+    "sponsor": "Tehran University of Medical Sciences",
+    "completion_date": "2008-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02097485",
+    "sponsor": "Dr. Reddy's Laboratories Limited",
+    "completion_date": "2014-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00512785",
+    "sponsor": "Ono Pharmaceutical Co. Ltd",
+    "completion_date": "2009-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01334515",
+    "sponsor": "Children's Oncology Group",
+    "completion_date": "2013-12-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05637515",
+    "sponsor": "Biocon Biologics Inc.",
+    "completion_date": "2023-09-19",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00475215",
+    "sponsor": "Merck Sharp & Dohme LLC",
+    "completion_date": "2006-08-21",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03367715",
+    "sponsor": "NYU Langone Health",
+    "completion_date": "2021-05-20",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00201435",
+    "sponsor": "Norwegian Breast Cancer Group",
+    "completion_date": "2008-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00947635",
+    "sponsor": "University of Alberta",
+    "completion_date": "2009-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00439608",
+    "sponsor": "Brown University",
+    "completion_date": "2010-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01873625",
+    "sponsor": "Royan Institute",
+    "completion_date": "2011-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01379625",
+    "sponsor": "Oregon Health and Science University",
+    "completion_date": "2015-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00021125",
+    "sponsor": "Medical Research Council",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00397917",
+    "sponsor": "University of Iowa",
+    "completion_date": "2012-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00491517",
+    "sponsor": "Mario Negri Institute for Pharmacological Research",
+    "completion_date": "2009-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05626140",
+    "sponsor": "Pakistan Institute of Medical Sciences",
+    "completion_date": "2022-05-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02644668",
+    "sponsor": "Cytokinetics",
+    "completion_date": "2018-05-31",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00846768",
+    "sponsor": "Boehringer Ingelheim",
+    "completion_date": "2009-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02798250",
+    "sponsor": "Institut de Recherches Cliniques de Montreal",
+    "completion_date": "2017-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02555150",
+    "sponsor": "Rhodes Pharmaceuticals, L.P.",
+    "completion_date": "2017-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02115750",
+    "sponsor": "Coherus Oncology, Inc.",
+    "completion_date": "2015-10",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00065650",
+    "sponsor": "National Center for Complementary and Integrative Health (NCCIH)",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01134250",
+    "sponsor": "Philogen S.p.A.",
+    "completion_date": "2014-04-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01888874",
+    "sponsor": "Galapagos NV",
+    "completion_date": "2015-02-18",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01397409",
+    "sponsor": "Allergan",
+    "completion_date": "2014-03-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00855309",
+    "sponsor": "Wake Forest University Health Sciences",
+    "completion_date": "2013-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02654509",
+    "sponsor": "U.S. Army Medical Research and Development Command",
+    "completion_date": "2016-02-16",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00105599",
+    "sponsor": "US Department of Veterans Affairs",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01075399",
+    "sponsor": "Siemens Molecular Imaging",
+    "completion_date": "2011-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00042432",
+    "sponsor": "Amgen",
+    "completion_date": "2003-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01078909",
+    "sponsor": "Penn State University",
+    "completion_date": "2012-11",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02709564",
+    "sponsor": "Assiut University",
+    "completion_date": "2019-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00329264",
+    "sponsor": "AstraZeneca",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00528164",
+    "sponsor": "University of Tennessee",
+    "completion_date": "2012-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00690209",
+    "sponsor": "University Hospital, Clermont-Ferrand",
+    "completion_date": "2013-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02523599",
+    "sponsor": "Innocoll",
+    "completion_date": "2016-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01046799",
+    "sponsor": "HepNet Study House, German Liverfoundation",
+    "completion_date": "2014-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03635099",
+    "sponsor": "Boehringer Ingelheim",
+    "completion_date": "2021-05-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00043732",
+    "sponsor": "Scios, Inc.",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04773964",
+    "sponsor": "Metacrine, Inc.",
+    "completion_date": "2022-12-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00428064",
+    "sponsor": "Wyeth is now a wholly owned subsidiary of Pfizer",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00192309",
+    "sponsor": "MedImmune LLC",
+    "completion_date": "2001-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00304499",
+    "sponsor": "Alza Corporation, DE, USA",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03158532",
+    "sponsor": "Instituto de Cardiologia de Santa Catarina",
+    "completion_date": "2021-10-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03573011",
+    "sponsor": "University Hospital, Ghent",
+    "completion_date": "2018-12-20",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02265744",
+    "sponsor": "Bristol-Myers Squibb",
+    "completion_date": "2017-10-26",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03042611",
+    "sponsor": "Elevar Therapeutics",
+    "completion_date": "2019-02-15",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03826771",
+    "sponsor": "Medical University of South Carolina",
+    "completion_date": "2024-03-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02937571",
+    "sponsor": "Memorial Sloan Kettering Cancer Center",
+    "completion_date": "2024-10-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01514344",
+    "sponsor": "Andres J. M. Ferreri",
+    "completion_date": "2014-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01025544",
+    "sponsor": "Novartis Vaccines",
+    "completion_date": "2009-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01936909",
+    "sponsor": "Virginia Commonwealth University",
+    "completion_date": "2016-09-23",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00095199",
+    "sponsor": "Eli Lilly and Company",
+    "completion_date": "2011-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00199771",
+    "sponsor": "Oslo University Hospital",
+    "completion_date": "2004-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01827371",
+    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "completion_date": "2015-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01678534",
+    "sponsor": "Instituto de Investigaci\u00f3n Hospital Universitario La Paz",
+    "completion_date": "2017-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00756171",
+    "sponsor": "Foundation for Liver Research",
+    "completion_date": "2009-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00433771",
+    "sponsor": "Boston Scientific Corporation",
+    "completion_date": "2008-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01701544",
+    "sponsor": "University College, London",
+    "completion_date": "2015-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00256932",
+    "sponsor": "Cubist Pharmaceuticals LLC, a subsidiary of Merck & Co., Inc. (Rahway, New Jersey USA)",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00658632",
+    "sponsor": "Eisai Inc.",
+    "completion_date": "2009-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02478632",
+    "sponsor": "ViiV Healthcare",
+    "completion_date": "2016-09-16",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00408187",
+    "sponsor": "Aurinia Pharmaceuticals Inc.",
+    "completion_date": "2008-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01310387",
+    "sponsor": "Chonnam National University Hospital",
+    "completion_date": "2012-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01360593",
+    "sponsor": "David A. Clump, MD, PhD",
+    "completion_date": "2016-03-13",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00101387",
+    "sponsor": "University of Pittsburgh",
+    "completion_date": "2008-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00016393",
+    "sponsor": "SWOG Cancer Research Network",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03782493",
+    "sponsor": "Northwestern University",
+    "completion_date": "2025-02-22",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01836393",
+    "sponsor": "Khon Kaen University",
+    "completion_date": "2013-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02028806",
+    "sponsor": "Yuhong Li",
+    "completion_date": "2020-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00338884",
+    "sponsor": "Pfizer",
+    "completion_date": "2009-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01118052",
+    "sponsor": "Gynecologic Oncology Group",
+    "completion_date": "2016-07-16",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02291133",
+    "sponsor": "Masa Bosnjak",
+    "completion_date": "2019-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00796952",
+    "sponsor": "University of Florida",
+    "completion_date": "2004-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06758947",
+    "sponsor": "Assiut University",
+    "completion_date": "2024-06-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01262638",
+    "sponsor": "Esperion Therapeutics, Inc.",
+    "completion_date": "2011-08-23",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02147158",
+    "sponsor": "Allergan",
+    "completion_date": "2016-11-24",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04701658",
+    "sponsor": "Eli Lilly and Company",
+    "completion_date": "2021-06-22",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00403455",
+    "sponsor": "VA Office of Research and Development",
+    "completion_date": "2011-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00171626",
+    "sponsor": "Novartis",
+    "completion_date": "2005-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01878526",
+    "sponsor": "Khon Kaen University",
+    "completion_date": "2015-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00367185",
+    "sponsor": "University Hospital, Lille",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00894985",
+    "sponsor": "Azidus Brasil",
+    "completion_date": "2009-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01687985",
+    "sponsor": "Braintree Laboratories",
+    "completion_date": "2013-03",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00357643",
+    "sponsor": "Tufts University",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01822743",
+    "sponsor": "Assistance Publique - H\u00f4pitaux de Paris",
+    "completion_date": "2014-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01576315",
+    "sponsor": "Rennes University Hospital",
+    "completion_date": "2015-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04461015",
+    "sponsor": "Adrian Vella",
+    "completion_date": "2021-07-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00639015",
+    "sponsor": "University of Roma La Sapienza",
+    "completion_date": "2008-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01829035",
+    "sponsor": "National Cancer Center, Korea",
+    "completion_date": "2017-06-21",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04048135",
+    "sponsor": "89bio, Inc.",
+    "completion_date": "2020-08-28",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04875676",
+    "sponsor": "Vaxart",
+    "completion_date": "2021-10-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02040376",
+    "sponsor": "The Hospital for Sick Children",
+    "completion_date": "2017-12-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00000176",
+    "sponsor": "National Institute on Aging (NIA)",
+    "completion_date": "2007-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01425476",
+    "sponsor": "Hartford Hospital",
+    "completion_date": "2016-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01544517",
+    "sponsor": "University of Campania Luigi Vanvitelli",
+    "completion_date": "2011-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03835117",
+    "sponsor": "Rossignol Medical Center",
+    "completion_date": "2022-07-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00649389",
+    "sponsor": "Daiichi Sankyo",
+    "completion_date": "2009-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02250950",
+    "sponsor": "Syracuse University",
+    "completion_date": "2015-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01797445",
+    "sponsor": "Gilead Sciences",
+    "completion_date": "2014-09-19",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00350272",
+    "sponsor": "Alexion Pharmaceuticals, Inc.",
+    "completion_date": "2007-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03036995",
+    "sponsor": "Centre Hospitalier Universitaire de Nice",
+    "completion_date": "2018-11-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00136539",
+    "sponsor": "Harold J. Burstein, MD, PhD",
+    "completion_date": "2006-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02787239",
+    "sponsor": "Shanghai Henlius Biotech",
+    "completion_date": "2018-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02064439",
+    "sponsor": "Bayer",
+    "completion_date": "2016-09-22",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02678975",
+    "sponsor": "Sahlgrenska University Hospital",
+    "completion_date": "2021-01-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00736957",
+    "sponsor": "Janssen Pharmaceutical K.K.",
+    "completion_date": "2009-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01252212",
+    "sponsor": "University of California, San Francisco",
+    "completion_date": "2012-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04685512",
+    "sponsor": "University Hospital, Caen",
+    "completion_date": "2021-04-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06263881",
+    "sponsor": "Materia Medica Holding",
+    "completion_date": "2025-03-19",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01847781",
+    "sponsor": "Karolinska University Hospital",
+    "completion_date": "2013-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00139919",
+    "sponsor": "Solvay Pharmaceuticals",
+    "completion_date": "2007-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02810119",
+    "sponsor": "Ocuwize LTD",
+    "completion_date": "2017-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01836328",
+    "sponsor": "L'Hospitalet de Llobregat",
+    "completion_date": "2015-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01743365",
+    "sponsor": "Hellenic Cooperative Oncology Group",
+    "completion_date": "2019-06-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04374565",
+    "sponsor": "University of Virginia",
+    "completion_date": "2021-03-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03213665",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2022-03-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05878067",
+    "sponsor": "AbbVie",
+    "completion_date": "2023-10-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01015430",
+    "sponsor": "Hoffmann-La Roche",
+    "completion_date": "2011-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00642928",
+    "sponsor": "Bioprojet",
+    "completion_date": "2009-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00535665",
+    "sponsor": "Sinovac Biotech Co., Ltd",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01744665",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2018-09-28",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02232607",
+    "sponsor": "Boehringer Ingelheim",
+    "completion_date": "1999-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02184507",
+    "sponsor": "Mohammad Hassan Eftekhari",
+    "completion_date": "2014-03",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03486392",
+    "sponsor": "Janssen Research & Development, LLC",
+    "completion_date": "2019-03-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02837900",
+    "sponsor": "OrthoTrophix, Inc",
+    "completion_date": "2017-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02125500",
+    "sponsor": "ANRS, Emerging Infectious Diseases",
+    "completion_date": "2015-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04462536",
+    "sponsor": "NoNO Inc.",
+    "completion_date": "2023-08-31",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02591771",
+    "sponsor": "Niguarda Hospital",
+    "completion_date": "2017-07-25",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02534844",
+    "sponsor": "Mandos LLC",
+    "completion_date": "2018-03-28",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00038298",
+    "sponsor": "Amgen",
+    "completion_date": "2004-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01954121",
+    "sponsor": "UCB Pharma SA",
+    "completion_date": "2015-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01294787",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2011-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03936387",
+    "sponsor": "Boston Children's Hospital",
+    "completion_date": "2019-09-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00603187",
+    "sponsor": "University of Washington",
+    "completion_date": "2008-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00329121",
+    "sponsor": "Peplin",
+    "completion_date": "2006-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00261521",
+    "sponsor": "Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00409214",
+    "sponsor": "Light Sciences Oncology",
+    "completion_date": "2008-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00610506",
+    "sponsor": "Duke University",
+    "completion_date": "2007-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04778904",
+    "sponsor": "Barinthus Biotherapeutics",
+    "completion_date": "2023-02-24",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00048633",
+    "sponsor": "QLT Inc.",
+    "completion_date": "2003-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00006152",
+    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01435252",
+    "sponsor": "University of Zurich",
+    "completion_date": "2017-10-25",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03460652",
+    "sponsor": "Zevra Therapeutics",
+    "completion_date": "2019-06-20",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00307047",
+    "sponsor": "Abbott Medical Devices",
+    "completion_date": "2009-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00883948",
+    "sponsor": "National Heart, Lung, and Blood Institute (NHLBI)",
+    "completion_date": "2011-03",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02075255",
+    "sponsor": "AstraZeneca",
+    "completion_date": "2016-08-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01814878",
+    "sponsor": "Janssen Korea, Ltd., Korea",
+    "completion_date": "2011-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01244243",
+    "sponsor": "University of California, Irvine",
+    "completion_date": "2012-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02304315",
+    "sponsor": "Green Cross Corporation",
+    "completion_date": "2016-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00031876",
+    "sponsor": "Swiss Cancer Institute",
+    "completion_date": "2004-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00021476",
+    "sponsor": "University of Washington",
+    "completion_date": "2007-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00818376",
+    "sponsor": "Lutheran University of Brazil",
+    "completion_date": "2006-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00008476",
+    "sponsor": "National Institute of Dental and Craniofacial Research (NIDCR)",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00517517",
+    "sponsor": "Alachua Government Services, Inc.",
+    "completion_date": "2007-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06197217",
+    "sponsor": "Westlake Pharmaceuticals (Hangzhou) Co., Ltd.",
+    "completion_date": "2023-08-21",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00524498",
+    "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+    "completion_date": "2010-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00005093",
+    "sponsor": "Pfizer",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00320021",
+    "sponsor": "BioStratum",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00168116",
+    "sponsor": "AHS Cancer Control Alberta",
+    "completion_date": "2009-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00596206",
+    "sponsor": "Sanofi",
+    "completion_date": "2009-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01348204",
+    "sponsor": "University of Alabama at Birmingham",
+    "completion_date": "2011-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00713804",
+    "sponsor": "University of British Columbia",
+    "completion_date": "2011-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00397904",
+    "sponsor": "Memorial Sloan Kettering Cancer Center",
+    "completion_date": "2010-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01309204",
+    "sponsor": "Alcon Research",
+    "completion_date": "2013-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00177684",
+    "sponsor": "University of Pittsburgh",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00619684",
+    "sponsor": "Fred Hutchinson Cancer Center",
+    "completion_date": "2015-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01902784",
+    "sponsor": "University of Pittsburgh",
+    "completion_date": "2014-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03467152",
+    "sponsor": "Eisai Inc.",
+    "completion_date": "2020-04-15",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04005352",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2022-09-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00817947",
+    "sponsor": "Royal Brompton & Harefield NHS Foundation Trust",
+    "completion_date": "2007-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02114658",
+    "sponsor": "Bayer",
+    "completion_date": "2015-02-23",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02762955",
+    "sponsor": "Biocad",
+    "completion_date": "2017-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00448955",
+    "sponsor": "Ardana Bioscience Ltd",
+    "completion_date": "2008-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02128126",
+    "sponsor": "ISA Pharmaceuticals",
+    "completion_date": "2018-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01305226",
+    "sponsor": "Bharat Biotech International Limited",
+    "completion_date": "2011-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01651143",
+    "sponsor": "Sanofi",
+    "completion_date": "2013-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01824615",
+    "sponsor": "Cathay General Hospital",
+    "completion_date": "2016-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00849615",
+    "sponsor": "Krankenhaus Nordwest",
+    "completion_date": "2012-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00942435",
+    "sponsor": "Astellas Pharma Inc",
+    "completion_date": "2010-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04269408",
+    "sponsor": "BIT Pharma GmbH",
+    "completion_date": "2022-05-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00235976",
+    "sponsor": "Avera Pharmaceuticals",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02201576",
+    "sponsor": "Assistance Publique - H\u00f4pitaux de Paris",
+    "completion_date": "2020-07-16",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02280317",
+    "sponsor": "ValiRx Plc",
+    "completion_date": "2020-01-27",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00111540",
+    "sponsor": "AstraZeneca",
+    "completion_date": "2006-09",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05019040",
+    "sponsor": "Zhejiang Palo Alto Pharmaceuticals, Inc.",
+    "completion_date": "2022-11-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03953989",
+    "sponsor": "IRCCS San Raffaele",
+    "completion_date": "2020-02-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02165189",
+    "sponsor": "Janssen Scientific Affairs, LLC",
+    "completion_date": "2015-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00925691",
+    "sponsor": "Rennes University Hospital",
+    "completion_date": "2016-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00207818",
+    "sponsor": "CHU de Quebec-Universite Laval",
+    "completion_date": "2009-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01009918",
+    "sponsor": "University of South Florida",
+    "completion_date": "2017-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00319410",
+    "sponsor": "Wolfson Medical Center",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03113760",
+    "sponsor": "AB2 Bio Ltd.",
+    "completion_date": "2023-10-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03114020",
+    "sponsor": "Gerard Turino",
+    "completion_date": "2019-11-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02384382",
+    "sponsor": "Pfizer",
+    "completion_date": "2019-05-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05733624",
+    "sponsor": "SCAI Therapeutics",
+    "completion_date": "2023-08-23",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00791024",
+    "sponsor": "Ove Andersen",
+    "completion_date": "2009-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03424824",
+    "sponsor": "Bioprojet",
+    "completion_date": "2021-11-24",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03891524",
+    "sponsor": "Janssen Research & Development, LLC",
+    "completion_date": "2021-04-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00246623",
+    "sponsor": "Pfizer",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01184846",
+    "sponsor": "CSL Behring",
+    "completion_date": "2011-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01724346",
+    "sponsor": "Pharmacyclics LLC.",
+    "completion_date": "2023-08-18",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01253603",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2011-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00401388",
+    "sponsor": "AEterna Zentaris",
+    "completion_date": "2011-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00121303",
+    "sponsor": "Stichting Hemato-Oncologie voor Volwassenen Nederland",
+    "completion_date": "2009-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05656027",
+    "sponsor": "LENZ Therapeutics, Inc",
+    "completion_date": "2023-12-15",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02278861",
+    "sponsor": "Universidade Federal de Goias",
+    "completion_date": "2014-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05118542",
+    "sponsor": "Indonesia University",
+    "completion_date": "2020-06-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00361842",
+    "sponsor": "Jazz Pharmaceuticals",
+    "completion_date": "2008-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00426842",
+    "sponsor": "James J. Peters Veterans Affairs Medical Center",
+    "completion_date": "2011-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06381986",
+    "sponsor": "Sunhawk Vision Biotech, Inc.",
+    "completion_date": "2025-04-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03858686",
+    "sponsor": "Foresee Pharmaceuticals Co., Ltd.",
+    "completion_date": "2022-12-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03598270",
+    "sponsor": "Grupo Espa\u00f1ol de Investigaci\u00f3n en C\u00e1ncer de Ovario",
+    "completion_date": "2024-08-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00013273",
+    "sponsor": "US Department of Veterans Affairs",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05895773",
+    "sponsor": "Menoufia University",
+    "completion_date": "2023-11-24",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00934141",
+    "sponsor": "University of Wisconsin, Madison",
+    "completion_date": "2009-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00281541",
+    "sponsor": "Astellas Pharma Inc",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00507741",
+    "sponsor": "Endocyte",
+    "completion_date": "2009-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00695305",
+    "sponsor": "GlaxoSmithKline",
+    "completion_date": "2010-05",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00031005",
+    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00044694",
+    "sponsor": "AstraZeneca",
+    "completion_date": "2003-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00005066",
+    "sponsor": "University of Chicago",
+    "completion_date": "2001-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04179266",
+    "sponsor": "CCH Pharmaceuticals",
+    "completion_date": "2020-05-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05824156",
+    "sponsor": "ChemomAb Ltd.",
+    "completion_date": "2022-08-15",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06065956",
+    "sponsor": "Pakistan Navy Station Shifa Hospital",
+    "completion_date": "2023-06-15",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01249391",
+    "sponsor": "Imperial College London",
+    "completion_date": "2011-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01535391",
+    "sponsor": "Gruppo Italiano Malattie EMatologiche dell'Adulto",
+    "completion_date": "2014-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01148797",
+    "sponsor": "Novartis Pharmaceuticals",
+    "completion_date": "2012-02",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01677897",
+    "sponsor": "Kantonsspital Graub\u00fcnden",
+    "completion_date": "2017-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00606697",
+    "sponsor": "GlaxoSmithKline",
+    "completion_date": "2008-05-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01315210",
+    "sponsor": "RiboCor, Inc.",
+    "completion_date": "2012-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00518713",
+    "sponsor": "Lundbeck LLC",
+    "completion_date": "2009-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02290613",
+    "sponsor": "Heidelberg University",
+    "completion_date": "2017-11-27",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00592124",
+    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "completion_date": "2010-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05750823",
+    "sponsor": "Incyte Corporation",
+    "completion_date": "2025-03-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03315923",
+    "sponsor": "Isfahan University of Medical Sciences",
+    "completion_date": "2019-02-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01212679",
+    "sponsor": "Jinling Hospital, China",
+    "completion_date": "2017-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02073279",
+    "sponsor": "Hoffmann-La Roche",
+    "completion_date": "2018-10-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06628596",
+    "sponsor": "Iovate Health Sciences International Inc",
+    "completion_date": "2024-07-19",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00514488",
+    "sponsor": "University of Bologna",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04930003",
+    "sponsor": "Research Institute for Biological Safety Problems",
+    "completion_date": "2021-12-15",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03613727",
+    "sponsor": "Virginia Commonwealth University",
+    "completion_date": "2022-10-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00005861",
+    "sponsor": "Gynecologic Oncology Group",
+    "completion_date": "2005-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03088670",
+    "sponsor": "SatRx LLC",
+    "completion_date": "2014-03-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00126373",
+    "sponsor": "Altschuler, Eric, M.D.",
+    "completion_date": "2006-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04324073",
+    "sponsor": "Assistance Publique - H\u00f4pitaux de Paris",
+    "completion_date": "2020-04-21",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00514683",
+    "sponsor": "Boehringer Ingelheim",
+    "completion_date": "2010-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01090154",
+    "sponsor": "University of Washington",
+    "completion_date": "2021-12-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00515554",
+    "sponsor": "University of Cologne",
+    "completion_date": "2019-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00164294",
+    "sponsor": "Centers for Disease Control and Prevention",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00575094",
+    "sponsor": "Wyeth is now a wholly owned subsidiary of Pfizer",
+    "completion_date": "2008-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03824405",
+    "sponsor": "Botanix Pharmaceuticals",
+    "completion_date": "2020-01-27",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02006056",
+    "sponsor": "Sunnybrook Health Sciences Centre",
+    "completion_date": "2014-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00135122",
+    "sponsor": "Sorlandet Hospital HF",
+    "completion_date": "2007-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01033422",
+    "sponsor": "Can-Fite BioPharma",
+    "completion_date": "2016-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00253591",
+    "sponsor": "Medical Research Council",
+    "completion_date": "2007-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03095274",
+    "sponsor": "Grupo Espanol de Tumores Neuroendocrinos",
+    "completion_date": "2019-11-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04488874",
+    "sponsor": "Centre Hospitalier Universitaire de Besancon",
+    "completion_date": "2023-05-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00556374",
+    "sponsor": "Amgen",
+    "completion_date": "2014-10-07",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03901118",
+    "sponsor": "Chipscreen Biosciences, Ltd.",
+    "completion_date": "2020-12-18",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01223690",
+    "sponsor": "University of Athens",
+    "completion_date": "2010-11",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05037097",
+    "sponsor": "Arcturus Therapeutics, Inc.",
+    "completion_date": "2023-12-19",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00413010",
+    "sponsor": "Pfizer's Upjohn has merged with Mylan to form Viatris Inc.",
+    "completion_date": "2008-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04045613",
+    "sponsor": "Basilea Pharmaceutica",
+    "completion_date": "2022-10-04",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04344860",
+    "sponsor": "Nicoletta C Machin",
+    "completion_date": "2024-08-28",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01239524",
+    "sponsor": "Tampere University Hospital",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00122824",
+    "sponsor": "Eli Lilly and Company",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT06603623",
+    "sponsor": "Biohaven Therapeutics Ltd.",
+    "completion_date": "2025-03-24",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00100724",
+    "sponsor": "VaxGen",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01185080",
+    "sponsor": "AstraZeneca",
+    "completion_date": "2010-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02888379",
+    "sponsor": "Topivert Pharma Ltd",
+    "completion_date": "2017-06-28",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00053196",
+    "sponsor": "Alliance for Clinical Trials in Oncology",
+    "completion_date": "2006-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00554788",
+    "sponsor": "Children's Oncology Group",
+    "completion_date": "2018-06-30",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01427803",
+    "sponsor": "Bayer",
+    "completion_date": "2011-12",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02382003",
+    "sponsor": "University of Virginia",
+    "completion_date": "2019-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04143061",
+    "sponsor": "Sanofi Pasteur, a Sanofi Company",
+    "completion_date": "2023-01-28",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03045861",
+    "sponsor": "GlaxoSmithKline",
+    "completion_date": "2018-04-23",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02896842",
+    "sponsor": "Versailles Hospital",
+    "completion_date": "2015-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01921803",
+    "sponsor": "University Hospital, Ghent",
+    "completion_date": "2020-07-14",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00261027",
+    "sponsor": "Ottawa Hospital Research Institute",
+    "completion_date": "2007-07",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01558661",
+    "sponsor": "Memorial Sloan Kettering Cancer Center",
+    "completion_date": "2016-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02300142",
+    "sponsor": "Genocea Biosciences, Inc.",
+    "completion_date": "2016-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00055770",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2006-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01661673",
+    "sponsor": "FORUM Pharmaceuticals Inc",
+    "completion_date": "2013-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02983773",
+    "sponsor": "Brown University",
+    "completion_date": "2021-07-21",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02115373",
+    "sponsor": "Merck KGaA, Darmstadt, Germany",
+    "completion_date": "2018-02-14",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04411069",
+    "sponsor": "Instituto do Cancer do Estado de S\u00e3o Paulo",
+    "completion_date": "2020-03-20",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01220869",
+    "sponsor": "Ferring Pharmaceuticals",
+    "completion_date": "2012-10",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05092841",
+    "sponsor": "Tasly GeneNet Pharmaceuticals Co., Ltd",
+    "completion_date": "2024-03-18",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05137041",
+    "sponsor": "Sanofi",
+    "completion_date": "2022-11-22",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01064141",
+    "sponsor": "Sanofi",
+    "completion_date": "2012-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02782741",
+    "sponsor": "Genzyme, a Sanofi Company",
+    "completion_date": "2020-03-19",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02809105",
+    "sponsor": "Astellas Pharma Inc",
+    "completion_date": "2016-11-14",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00151905",
+    "sponsor": "Sheikh Khalifa Medical City",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00645905",
+    "sponsor": "Abbott",
+    "completion_date": "2005-03",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00196313",
+    "sponsor": "Duramed Research",
+    "completion_date": "2008-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00414960",
+    "sponsor": "Eli Lilly and Company",
+    "completion_date": "2010-09",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02113982",
+    "sponsor": "Stemline Therapeutics, Inc.",
+    "completion_date": "2020-02-01",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00809523",
+    "sponsor": "Yale University",
+    "completion_date": "2010-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01740323",
+    "sponsor": "Andrew H Miller",
+    "completion_date": "2018-07-27",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00563680",
+    "sponsor": "NantCell, Inc.",
+    "completion_date": "2009-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01490580",
+    "sponsor": "Centre Hospitalier Intercommunal Creteil",
+    "completion_date": "2016-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01054079",
+    "sponsor": "Wake Forest University Health Sciences",
+    "completion_date": "2014-08",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03345979",
+    "sponsor": "Alkermes, Inc.",
+    "completion_date": "2019-03-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04100096",
+    "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+    "completion_date": "2021-06-27",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT03505996",
+    "sponsor": "CStone Pharmaceuticals",
+    "completion_date": "2020-02-19",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00413946",
+    "sponsor": "Swiss Neonatal Network",
+    "completion_date": "2012-12",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00316888",
+    "sponsor": "ECOG-ACRIN Cancer Research Group",
+    "completion_date": "2015-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01362361",
+    "sponsor": "Martin-Luther-Universit\u00e4t Halle-Wittenberg",
+    "completion_date": "2016-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00790686",
+    "sponsor": "University Hospital, Bordeaux",
+    "completion_date": "2013-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05816070",
+    "sponsor": "IVIEW Therapeutics Inc.",
+    "completion_date": "2023-11-13",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00185770",
+    "sponsor": "Stanford University",
+    "completion_date": "",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02316470",
+    "sponsor": "Valneva Austria GmbH",
+    "completion_date": "2015-05",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02015169",
+    "sponsor": "Samsung Medical Center",
+    "completion_date": "2017-07-17",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01380769",
+    "sponsor": "NewLink Genetics Corporation",
+    "completion_date": "2013-02",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01812369",
+    "sponsor": "University Hospital, Rouen",
+    "completion_date": "2023-09-25",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00262769",
+    "sponsor": "University College, London",
+    "completion_date": "2008-08",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT04933383",
+    "sponsor": "Aquilon Pharmaceuticals S.A.",
+    "completion_date": "2022-12-31",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00068783",
+    "sponsor": "National Cancer Institute (NCI)",
+    "completion_date": "2007-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01241383",
+    "sponsor": "Assistance Publique - H\u00f4pitaux de Paris",
+    "completion_date": "2015-10",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT05052983",
+    "sponsor": "Galderma R&D",
+    "completion_date": "2023-09-11",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00339183",
+    "sponsor": "Amgen",
+    "completion_date": "2009-04-01",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00001483",
+    "sponsor": "National Institute of Mental Health (NIMH)",
+    "completion_date": "",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT01533441",
+    "sponsor": "Danisco",
+    "completion_date": "2013-04",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00046241",
+    "sponsor": "GlaxoSmithKline",
+    "completion_date": "2003-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT02577341",
+    "sponsor": "Sun Yat-sen University",
+    "completion_date": "2020-06",
+    "outcome_label": 0,
+    "overall_status": "COMPLETED"
+  },
+  {
+    "nct_id": "NCT00478205",
+    "sponsor": "Eisai Inc.",
+    "completion_date": "2009-06",
+    "outcome_label": 1,
+    "overall_status": "COMPLETED"
+  }
+]
