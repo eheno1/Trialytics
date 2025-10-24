@@ -395,14 +395,27 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
 
 def show_main_view():
     """Display main trials table view."""
-    # Display logo
+    # Display logo with reduced spacing
     logo_path = Path(__file__).parent.parent.parent.parent / "logo" / "logo.png"
     if logo_path.exists():
+        # Add custom CSS to reduce spacing
+        st.markdown("""
+        <style>
+        .main .block-container {
+            padding-top: 1rem;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+        
+        # Display logo with minimal margin
+        st.markdown('<div style="margin-top: -2rem; margin-bottom: -1rem;">', unsafe_allow_html=True)
         st.image(str(logo_path), use_container_width=False, width=400)
+        st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.title("Biotech Trial Success Predictor")
     
-    st.markdown("Predicting Phase 2 & 3 clinical trial success probabilities")
+    # Subtitle with reduced spacing
+    st.markdown('<p style="margin-top: 0.5rem; font-size: 1.1rem;">Predicting Phase 2 & 3 clinical trial success probabilities</p>', unsafe_allow_html=True)
     
     # Load data
     df = load_data()
