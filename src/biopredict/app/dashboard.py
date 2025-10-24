@@ -130,10 +130,75 @@ def display_colored_table(df: pd.DataFrame, height: int = 600):
         else:
             return "🔴 Low"
     
-    if 'Bucket' in df_display.columns:
+    if 'Rating' in df_display.columns:
+        df_display['Rating'] = df_display['Rating'].apply(add_color_indicator)
+    elif 'Bucket' in df_display.columns:
         df_display['Bucket'] = df_display['Bucket'].apply(add_color_indicator)
     elif 'bucket' in df_display.columns:
         df_display['bucket'] = df_display['bucket'].apply(add_color_indicator)
+    
+    # Add custom CSS for column widths to prevent text cutoff
+    st.markdown("""
+    <style>
+    .dataframe {
+        font-size: 14px;
+    }
+    .dataframe th {
+        background-color: #f0f2f6;
+        font-weight: bold;
+        text-align: left;
+        padding: 8px;
+    }
+    .dataframe td {
+        padding: 8px;
+        white-space: nowrap;
+        overflow: visible;
+    }
+    /* Ensure Rating column has enough width */
+    .dataframe th:nth-child(2), .dataframe td:nth-child(2) {
+        min-width: 120px;
+        width: 120px;
+    }
+    /* Company column */
+    .dataframe th:nth-child(1), .dataframe td:nth-child(1) {
+        min-width: 150px;
+        width: 150px;
+    }
+    /* Probability column */
+    .dataframe th:nth-child(3), .dataframe td:nth-child(3) {
+        min-width: 100px;
+        width: 100px;
+    }
+    /* Ticker column */
+    .dataframe th:nth-child(4), .dataframe td:nth-child(4) {
+        min-width: 80px;
+        width: 80px;
+    }
+    /* Trial ID column */
+    .dataframe th:nth-child(5), .dataframe td:nth-child(5) {
+        min-width: 120px;
+        width: 120px;
+    }
+    /* Title column - flexible width */
+    .dataframe th:nth-child(6), .dataframe td:nth-child(6) {
+        min-width: 200px;
+    }
+    /* Phase column */
+    .dataframe th:nth-child(7), .dataframe td:nth-child(7) {
+        min-width: 80px;
+        width: 80px;
+    }
+    /* Indication column - flexible width */
+    .dataframe th:nth-child(8), .dataframe td:nth-child(8) {
+        min-width: 200px;
+    }
+    /* Primary Completion Date column */
+    .dataframe th:nth-child(9), .dataframe td:nth-child(9) {
+        min-width: 140px;
+        width: 140px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
     
     # Display the dataframe
     st.dataframe(df_display, use_container_width=True, height=height)
@@ -351,7 +416,7 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     
     display_trials.columns = [
         'Trial ID', 'Title', 'Phase', 'Indication',
-        'Enrollment', 'Probability', 'Bucket', 'Completion Date'
+        'Enrollment', 'Probability', 'Rating', 'Completion Date'
     ]
     
     display_trials['Probability'] = display_trials['Probability'].apply(lambda x: f"{x:.1%}")
@@ -577,26 +642,26 @@ python scripts/train_model.py
     # Prepare display DataFrame
     display_df = df_filtered[[
         "sponsor_name",
+        "bucket",
+        "probability",
         "ticker",
         "nct_id",
         "brief_title",
         "phase_num",
         "condition",
-        "probability",
-        "bucket",
         "primary_completion_date",
     ]].copy()
     
     # Rename columns for display
     display_df.columns = [
         "Company",
+        "Rating",
+        "Probability",
         "Ticker",
         "Trial ID",
         "Title",
         "Phase",
         "Indication",
-        "Probability",
-        "Bucket",
         "Primary Completion Date",
     ]
     
