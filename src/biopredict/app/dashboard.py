@@ -747,7 +747,7 @@ python scripts/train_model.py
 def main():
     """Main dashboard application."""
     st.set_page_config(
-        page_title="Biotech Trial Success Predictor",
+        page_title="Trialytics",
         page_icon="",
         layout="wide"
     )
