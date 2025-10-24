@@ -281,6 +281,11 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     
     st.markdown("---")
     
+    # Get stock info early for valuation analysis
+    info = None
+    if ticker:
+        info = get_stock_info(ticker)
+    
     # Valuation Analysis Section (moved above stock information)
     if ticker and info:
         # Determine valuation assessment
@@ -372,8 +377,6 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     # Stock information (if ticker available)
     if ticker:
         st.subheader("Stock Information & Financials")
-        
-        info = get_stock_info(ticker)
         
         if info:
             # Price metrics
