@@ -4,6 +4,11 @@ import streamlit as st
 from typing import Optional, Dict
 import re
 import yfinance as yf
+import requests
+from datetime import datetime
+
+# Alpha Vantage API Key
+ALPHA_VANTAGE_API_KEY = "FSN3QRJSDJ2W8VK9"
 
 
 # Common biotech/pharma ticker mappings
@@ -146,8 +151,72 @@ def get_stock_data(ticker: str, period: str = "1y") -> Optional[pd.DataFrame]:
 
 
 @st.cache_data(ttl=600)
+def get_alpha_vantage_overview(ticker: str) -> Optional[Dict]:
+    """Get company overview from Alpha Vantage.
+    
+    Args:
+        ticker: Stock ticker symbol
+        
+    Returns:
+        Dictionary with company overview data
+    """
+    try:
+        url = "https://www.alphavantage.co/query"
+        params = {
+            "function": "OVERVIEW",
+            "symbol": ticker,
+            "apikey": ALPHA_VANTAGE_API_KEY
+        }
+        
+        response = requests.get(url, params=params, timeout=10)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if data and "Symbol" in data:
+                return data
+        
+        return None
+        
+    except Exception as e:
+        print(f"Error fetching Alpha Vantage overview for {ticker}: {e}")
+        return None
+
+
+@st.cache_data(ttl=600)
+def get_alpha_vantage_quote(ticker: str) -> Optional[Dict]:
+    """Get real-time quote from Alpha Vantage.
+    
+    Args:
+        ticker: Stock ticker symbol
+        
+    Returns:
+        Dictionary with quote data
+    """
+    try:
+        url = "https://www.alphavantage.co/query"
+        params = {
+            "function": "GLOBAL_QUOTE",
+            "symbol": ticker,
+            "apikey": ALPHA_VANTAGE_API_KEY
+        }
+        
+        response = requests.get(url, params=params, timeout=10)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if "Global Quote" in data and data["Global Quote"]:
+                return data["Global Quote"]
+        
+        return None
+        
+    except Exception as e:
+        print(f"Error fetching Alpha Vantage quote for {ticker}: {e}")
+        return None
+
+
+@st.cache_data(ttl=600)
 def get_stock_info(ticker: str) -> Optional[Dict]:
-    """Get stock information using yfinance.
+    """Get comprehensive stock information combining Alpha Vantage and yfinance.
     
     Args:
         ticker: Stock ticker symbol
@@ -156,10 +225,60 @@ def get_stock_info(ticker: str) -> Optional[Dict]:
         Dictionary with stock info or None if failed
     """
     try:
-        stock = yf.Ticker(ticker)
-        info = stock.info
+        # Try Alpha Vantage first for more detailed data
+        av_overview = get_alpha_vantage_overview(ticker)
+        av_quote = get_alpha_vantage_quote(ticker)
         
-        if info and len(info) > 1:  # info has at least some data
+        # Get yfinance data as supplement
+        stock = yf.Ticker(ticker)
+        yf_info = stock.info if stock else {}
+        
+        # Merge data from both sources
+        info = {}
+        
+        # Price data (prefer Alpha Vantage for real-time)
+        if av_quote:
+            info['currentPrice'] = float(av_quote.get('05. price', 0)) if av_quote.get('05. price') else None
+            info['previousClose'] = float(av_quote.get('08. previous close', 0)) if av_quote.get('08. previous close') else None
+            info['dayHigh'] = float(av_quote.get('03. high', 0)) if av_quote.get('03. high') else None
+            info['dayLow'] = float(av_quote.get('04. low', 0)) if av_quote.get('04. low') else None
+            info['volume'] = int(av_quote.get('06. volume', 0)) if av_quote.get('06. volume') else None
+        elif yf_info:
+            info['currentPrice'] = yf_info.get('currentPrice') or yf_info.get('regularMarketPrice')
+            info['previousClose'] = yf_info.get('previousClose')
+            info['dayHigh'] = yf_info.get('dayHigh')
+            info['dayLow'] = yf_info.get('dayLow')
+            info['volume'] = yf_info.get('volume')
+        
+        # Company fundamentals from Alpha Vantage
+        if av_overview:
+            info['marketCap'] = float(av_overview.get('MarketCapitalization', 0)) if av_overview.get('MarketCapitalization') else None
+            info['totalRevenue'] = float(av_overview.get('RevenueTTM', 0)) if av_overview.get('RevenueTTM') else None
+            info['profitMargins'] = float(av_overview.get('ProfitMargin', 0)) if av_overview.get('ProfitMargin') else None
+            info['trailingPE'] = float(av_overview.get('TrailingPE', 0)) if av_overview.get('TrailingPE') else None
+            info['forwardPE'] = float(av_overview.get('ForwardPE', 0)) if av_overview.get('ForwardPE') else None
+            info['priceToBook'] = float(av_overview.get('PriceToBookRatio', 0)) if av_overview.get('PriceToBookRatio') else None
+            info['pegRatio'] = float(av_overview.get('PEGRatio', 0)) if av_overview.get('PEGRatio') else None
+            info['debtToEquity'] = float(av_overview.get('DebtToEquity', 0)) if av_overview.get('DebtToEquity') else None
+            info['dividendYield'] = float(av_overview.get('DividendYield', 0)) if av_overview.get('DividendYield') else None
+            info['beta'] = float(av_overview.get('Beta', 0)) if av_overview.get('Beta') else None
+            info['fiftyTwoWeekHigh'] = float(av_overview.get('52WeekHigh', 0)) if av_overview.get('52WeekHigh') else None
+            info['fiftyTwoWeekLow'] = float(av_overview.get('52WeekLow', 0)) if av_overview.get('52WeekLow') else None
+            info['shortName'] = av_overview.get('Name')
+            info['sector'] = av_overview.get('Sector')
+            info['industry'] = av_overview.get('Industry')
+            info['description'] = av_overview.get('Description')
+            info['employees'] = av_overview.get('FullTimeEmployees')
+        
+        # Fill in any gaps with yfinance data
+        if yf_info:
+            for key in ['marketCap', 'totalRevenue', 'profitMargins', 'trailingPE', 'forwardPE', 
+                       'priceToBook', 'pegRatio', 'debtToEquity', 'fiftyTwoWeekHigh', 'fiftyTwoWeekLow',
+                       'averageVolume', 'totalCash', 'totalDebt', 'enterpriseToRevenue', 'enterpriseToEbitda']:
+                if not info.get(key) and yf_info.get(key):
+                    info[key] = yf_info.get(key)
+        
+        if info and len(info) > 1:
             return info
         
         return None
