@@ -85,6 +85,36 @@ def get_rating_color(rating: int) -> str:
     return colors.get(rating, "#757575")
 
 
+def get_daily_change_color(change_pct: float) -> str:
+    """Get color for daily change percentage."""
+    if change_pct > 0:
+        return "#28a745"  # Green for positive
+    elif change_pct < 0:
+        return "#dc3545"  # Red for negative
+    else:
+        return "#6c757d"  # Gray for neutral
+
+
+def get_probability_bucket_color(bucket: str) -> str:
+    """Get color for probability bucket."""
+    if bucket == "High":
+        return "#28a745"  # Green
+    elif bucket == "Medium":
+        return "#ffc107"  # Yellow
+    else:  # Low
+        return "#dc3545"  # Red
+
+
+def apply_row_coloring(df: pd.DataFrame) -> pd.DataFrame:
+    """Apply color coding to dataframe rows based on probability bucket."""
+    def color_row(row):
+        bucket = row.get('bucket', row.get('Bucket', ''))
+        color = get_probability_bucket_color(bucket)
+        return [f"background-color: {color}; color: white; font-weight: bold" if pd.notna(bucket) else ""] * len(row)
+    
+    return df.style.apply(color_row, axis=1)
+
+
 def show_stock_chart(ticker: str, period: str):
     """Display stock price chart."""
     try:
@@ -173,7 +203,8 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
                 prev_close = info.get('previousClose')
                 if current_price and prev_close:
                     change_pct = ((current_price - prev_close) / prev_close) * 100
-                    st.metric("Daily Change", f"{change_pct:+.2f}%")
+                    color = get_daily_change_color(change_pct)
+                    st.markdown(f"**Daily Change**<br><span style='color:{color}; font-size: 1.2em; font-weight: bold;'>{change_pct:+.2f}%</span>", unsafe_allow_html=True)
                 else:
                     st.metric("Daily Change", "N/A")
             
@@ -184,7 +215,7 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
             with col4:
                 volume = info.get('volume')
                 if volume:
-                    st.metric("Volume", f"{volume:,}")
+                    st.metric("Volume", f"${volume:,}")
                 else:
                     st.metric("Volume", "N/A")
             
@@ -303,7 +334,9 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     display_trials['Phase'] = display_trials['Phase'].apply(lambda x: f"Phase {int(x)}")
     display_trials = display_trials.sort_values('Probability', ascending=False)
     
-    st.dataframe(display_trials, use_container_width=True, height=400)
+    # Apply row coloring based on probability bucket
+    styled_trials = apply_row_coloring(display_trials)
+    st.dataframe(styled_trials, use_container_width=True, height=400)
     
     # Valuation Analysis Section
     if ticker and info:
@@ -556,9 +589,12 @@ python scripts/train_model.py
     # Sort by probability (descending)
     display_df = display_df.sort_values("Probability", ascending=False)
     
-    # Display table with clickable companies
+    # Display table with clickable companies and color coding
     st.markdown("**Tip:** Select a company below to view detailed stock information and trial portfolio")
-    st.dataframe(display_df, use_container_width=True, height=600)
+    
+    # Apply row coloring based on probability bucket
+    styled_df = apply_row_coloring(display_df)
+    st.dataframe(styled_df, use_container_width=True, height=600)
     
     # Company selection for detail view
     st.markdown("---")
