@@ -396,7 +396,7 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
 def show_main_view():
     """Display main trials table view."""
     # Display logo with reduced spacing
-    logo_path = Path(__file__).parent.parent.parent.parent / "logo" / "logo.png"
+    logo_path = Path(__file__).parent.parent.parent.parent / "logo" / "svg-logo.svg"
     if logo_path.exists():
         # Add custom CSS to reduce spacing
         st.markdown("""
