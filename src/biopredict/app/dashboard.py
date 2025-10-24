@@ -107,12 +107,36 @@ def get_probability_bucket_color(bucket: str) -> str:
 
 def apply_row_coloring(df: pd.DataFrame) -> pd.DataFrame:
     """Apply color coding to dataframe rows based on probability bucket."""
-    def color_row(row):
-        bucket = row.get('bucket', row.get('Bucket', ''))
-        color = get_probability_bucket_color(bucket)
-        return [f"background-color: {color}; color: white; font-weight: bold" if pd.notna(bucket) else ""] * len(row)
+    # Return the dataframe without styling to avoid jinja2 dependency issues
+    # Color coding will be handled in the display logic instead
+    return df
+
+
+def display_colored_table(df: pd.DataFrame, height: int = 600):
+    """Display dataframe with color indicators for probability buckets."""
+    if df.empty:
+        st.info("No data to display")
+        return
     
-    return df.style.apply(color_row, axis=1)
+    # Add color indicators to the dataframe
+    df_display = df.copy()
+    
+    # Add color indicators based on bucket
+    def add_color_indicator(bucket):
+        if bucket == "High":
+            return "🟢 High"
+        elif bucket == "Medium":
+            return "🟡 Medium"
+        else:
+            return "🔴 Low"
+    
+    if 'Bucket' in df_display.columns:
+        df_display['Bucket'] = df_display['Bucket'].apply(add_color_indicator)
+    elif 'bucket' in df_display.columns:
+        df_display['bucket'] = df_display['bucket'].apply(add_color_indicator)
+    
+    # Display the dataframe
+    st.dataframe(df_display, use_container_width=True, height=height)
 
 
 def show_stock_chart(ticker: str, period: str):
@@ -334,9 +358,8 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     display_trials['Phase'] = display_trials['Phase'].apply(lambda x: f"Phase {int(x)}")
     display_trials = display_trials.sort_values('Probability', ascending=False)
     
-    # Apply row coloring based on probability bucket
-    styled_trials = apply_row_coloring(display_trials)
-    st.dataframe(styled_trials, use_container_width=True, height=400)
+    # Display table with color-coded rows
+    display_colored_table(display_trials, height=400)
     
     # Valuation Analysis Section
     if ticker and info:
@@ -592,9 +615,8 @@ python scripts/train_model.py
     # Display table with clickable companies and color coding
     st.markdown("**Tip:** Select a company below to view detailed stock information and trial portfolio")
     
-    # Apply row coloring based on probability bucket
-    styled_df = apply_row_coloring(display_df)
-    st.dataframe(styled_df, use_container_width=True, height=600)
+    # Display table with color-coded rows
+    display_colored_table(display_df)
     
     # Company selection for detail view
     st.markdown("---")
