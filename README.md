@@ -4,7 +4,7 @@ A machine learning system to predict the probability that Phase 2 or Phase 3 bio
 
 ## Overview
 
-This MVP predicts trial success using:
+This app predicts trial success using:
 - ClinicalTrials.gov API for trial metadata
 - Calibrated Logistic Regression model
 - Industry benchmark success rates
