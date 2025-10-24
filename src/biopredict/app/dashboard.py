@@ -739,7 +739,7 @@ python scripts/train_model.py
     # Footer
     st.markdown("""
     <div style='text-align: center; color: gray; padding: 20px;'>
-        Trialytics | Data from ClinicalTrials.gov & Yahoo Finance
+        Trialytics | Data from ClinicalTrials.gov & Alpha Vantage
     </div>
     """, unsafe_allow_html=True)
 
