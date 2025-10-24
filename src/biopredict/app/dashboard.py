@@ -334,7 +334,7 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
         else:  # Market Perform
             rating_color = "#FFC107"  # Yellow
         
-        st.subheader(f"Valuation Analysis: <span style='color:{rating_color}; font-weight: bold;'>{valuation_rating}</span>", unsafe_allow_html=True)
+        st.markdown(f"## Valuation Analysis: <span style='color:{rating_color}; font-weight: bold;'>{valuation_rating}</span>", unsafe_allow_html=True)
         
         col1, col2 = st.columns(2)
         
