@@ -266,12 +266,108 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
             overall_bucket = "Medium"
         else:
             overall_bucket = "Low"
-        st.markdown(f"### **Success Probability: {overall_bucket}**")
+        # Color code the success probability
+        if overall_bucket == "High":
+            color = "#4CAF50"  # Lighter, more lively green
+        elif overall_bucket == "Medium":
+            color = "#FFC107"  # Yellow
+        else:
+            color = "#F44336"  # Red
+        
+        st.markdown(f"### **Success Probability: <span style='color:{color}; font-weight: bold;'>{overall_bucket}</span>**", unsafe_allow_html=True)
     
     with col3:
         st.metric("Avg Probability", f"{avg_prob:.1%}")
     
     st.markdown("---")
+    
+    # Valuation Analysis Section (moved above stock information)
+    if ticker and info:
+        # Determine valuation assessment
+        pe_ratio = info.get('trailingPE')
+        industry_pe = 20  # Biotech industry average approximation
+        ev_to_revenue = info.get('enterpriseToRevenue')
+        
+        valuation_score = 0
+        total_metrics = 0
+        
+        if pe_ratio:
+            total_metrics += 1
+            if pe_ratio < industry_pe * 0.8:
+                valuation_score += 1  # Undervalued
+            elif pe_ratio > industry_pe * 1.2:
+                valuation_score -= 1  # Overvalued
+        
+        if ev_to_revenue:
+            total_metrics += 1
+            if ev_to_revenue < 3:
+                valuation_score += 1
+            elif ev_to_revenue > 8:
+                valuation_score -= 1
+        
+        # Determine rating
+        if total_metrics > 0:
+            avg_score = valuation_score / total_metrics
+            if avg_score > 0.3:
+                valuation_rating = "Underperform"
+                explanation = "The company appears overvalued compared to industry peers."
+            elif avg_score < -0.3:
+                valuation_rating = "Outperform"
+                explanation = "The company appears undervalued, presenting potential upside."
+            else:
+                valuation_rating = "Market Perform"
+                explanation = "The company is fairly valued relative to industry benchmarks."
+        else:
+            valuation_rating = "Market Perform"
+            explanation = "Insufficient data for comprehensive valuation analysis."
+        
+        # Color code the valuation rating
+        if valuation_rating == "Outperform":
+            rating_color = "#4CAF50"  # Green
+        elif valuation_rating == "Underperform":
+            rating_color = "#F44336"  # Red
+        else:  # Market Perform
+            rating_color = "#FFC107"  # Yellow
+        
+        st.subheader(f"Valuation Analysis: <span style='color:{rating_color}; font-weight: bold;'>{valuation_rating}</span>", unsafe_allow_html=True)
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("##### Valuation Metrics vs Industry")
+            if pe_ratio:
+                st.write(f"**P/E Ratio:** {pe_ratio:.2f} (Industry avg: ~{industry_pe})")
+                if pe_ratio < industry_pe:
+                    st.success("Below industry average - potentially undervalued")
+                elif pe_ratio > industry_pe * 1.2:
+                    st.warning("Above industry average - potentially overvalued")
+                else:
+                    st.info("In line with industry average")
+            
+            if ev_to_revenue:
+                st.write(f"**EV/Revenue:** {ev_to_revenue:.2f} (Biotech range: 2-8)")
+                if ev_to_revenue < 3:
+                    st.success("Low multiple - efficient valuation")
+                elif ev_to_revenue > 8:
+                    st.warning("High multiple - premium valuation")
+                else:
+                    st.info("Moderate valuation multiple")
+        
+        with col2:
+            st.markdown("##### Assessment")
+            st.write(explanation)
+            
+            # Trial success impact
+            if avg_prob >= 0.70:
+                st.write("**Pipeline Strength:** High trial success probability could drive upside.")
+            elif avg_prob >= 0.40:
+                st.write("**Pipeline Strength:** Moderate trial success probability.")
+            else:
+                st.write("**Pipeline Strength:** Lower trial success probability may pressure valuation.")
+            
+            st.info("**Note:** This is a simplified analysis. Full valuation requires detailed financial modeling, peer comparison, and market analysis.")
+        
+        st.markdown("---")
     
     # Stock information (if ticker available)
     if ticker:
@@ -293,7 +389,7 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
                 if current_price and prev_close:
                     change_pct = ((current_price - prev_close) / prev_close) * 100
                     color = get_daily_change_color(change_pct)
-                    st.markdown(f"**Daily Change**<br><span style='color:{color}; font-size: 1.2em; font-weight: bold;'>{change_pct:+.2f}%</span>", unsafe_allow_html=True)
+                    st.markdown(f"**Daily Change**<br><span style='color:{color}; font-size: 1.5em; font-weight: bold;'>{change_pct:+.2f}%</span>", unsafe_allow_html=True)
                 else:
                     st.metric("Daily Change", "N/A")
             
@@ -426,85 +522,6 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     # Display table with color-coded rows
     display_colored_table(display_trials, height=400)
     
-    # Valuation Analysis Section
-    if ticker and info:
-        st.markdown("---")
-        
-        # Determine valuation assessment
-        pe_ratio = info.get('trailingPE')
-        industry_pe = 20  # Biotech industry average approximation
-        ev_to_revenue = info.get('enterpriseToRevenue')
-        
-        valuation_score = 0
-        total_metrics = 0
-        
-        if pe_ratio:
-            total_metrics += 1
-            if pe_ratio < industry_pe * 0.8:
-                valuation_score += 1  # Undervalued
-            elif pe_ratio > industry_pe * 1.2:
-                valuation_score -= 1  # Overvalued
-        
-        if ev_to_revenue:
-            total_metrics += 1
-            if ev_to_revenue < 3:
-                valuation_score += 1
-            elif ev_to_revenue > 8:
-                valuation_score -= 1
-        
-        # Determine rating
-        if total_metrics > 0:
-            avg_score = valuation_score / total_metrics
-            if avg_score > 0.3:
-                valuation_rating = "Underperform"
-                explanation = "The company appears overvalued compared to industry peers."
-            elif avg_score < -0.3:
-                valuation_rating = "Outperform"
-                explanation = "The company appears undervalued, presenting potential upside."
-            else:
-                valuation_rating = "Market Perform"
-                explanation = "The company is fairly valued relative to industry benchmarks."
-        else:
-            valuation_rating = "Market Perform"
-            explanation = "Insufficient data for comprehensive valuation analysis."
-        
-        st.subheader(f"Valuation Analysis: {valuation_rating}")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("##### Valuation Metrics vs Industry")
-            if pe_ratio:
-                st.write(f"**P/E Ratio:** {pe_ratio:.2f} (Industry avg: ~{industry_pe})")
-                if pe_ratio < industry_pe:
-                    st.success("Below industry average - potentially undervalued")
-                elif pe_ratio > industry_pe * 1.2:
-                    st.warning("Above industry average - potentially overvalued")
-                else:
-                    st.info("In line with industry average")
-            
-            if ev_to_revenue:
-                st.write(f"**EV/Revenue:** {ev_to_revenue:.2f} (Biotech range: 2-8)")
-                if ev_to_revenue < 3:
-                    st.success("Low multiple - efficient valuation")
-                elif ev_to_revenue > 8:
-                    st.warning("High multiple - premium valuation")
-                else:
-                    st.info("Moderate valuation multiple")
-        
-        with col2:
-            st.markdown("##### Assessment")
-            st.write(explanation)
-            
-            # Trial success impact
-            if avg_prob >= 0.70:
-                st.write("**Pipeline Strength:** High trial success probability could drive upside.")
-            elif avg_prob >= 0.40:
-                st.write("**Pipeline Strength:** Moderate trial success probability.")
-            else:
-                st.write("**Pipeline Strength:** Lower trial success probability may pressure valuation.")
-            
-            st.info("**Note:** This is a simplified analysis. Full valuation requires detailed financial modeling, peer comparison, and market analysis.")
     
     # Back button
     st.markdown("---")
