@@ -3,9 +3,16 @@ import pandas as pd
 import streamlit as st
 from typing import Optional, Dict
 import re
-import yfinance as yf
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
+
+# Try to import yfinance (optional for Python 3.8 compatibility)
+try:
+    import yfinance as yf
+    YFINANCE_AVAILABLE = True
+except (ImportError, TypeError) as e:
+    YFINANCE_AVAILABLE = False
+    print(f"yfinance not available (Python 3.8 compatibility): {e}")
 
 # Alpha Vantage API Key
 ALPHA_VANTAGE_API_KEY = "FSN3QRJSDJ2W8VK9"
@@ -127,8 +134,51 @@ def lookup_ticker(company_name: str) -> Optional[str]:
 
 
 @st.cache_data(ttl=600)
+def get_alpha_vantage_daily(ticker: str, outputsize: str = "compact") -> Optional[pd.DataFrame]:
+    """Get daily stock data from Alpha Vantage.
+    
+    Args:
+        ticker: Stock ticker symbol
+        outputsize: 'compact' (100 days) or 'full' (20+ years)
+        
+    Returns:
+        DataFrame with OHLCV data
+    """
+    try:
+        url = "https://www.alphavantage.co/query"
+        params = {
+            "function": "TIME_SERIES_DAILY",
+            "symbol": ticker,
+            "outputsize": outputsize,
+            "apikey": ALPHA_VANTAGE_API_KEY
+        }
+        
+        response = requests.get(url, params=params, timeout=15)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if "Time Series (Daily)" in data:
+                time_series = data["Time Series (Daily)"]
+                df = pd.DataFrame.from_dict(time_series, orient='index')
+                df.index = pd.to_datetime(df.index)
+                df = df.sort_index()
+                
+                # Rename columns to match yfinance format
+                df.columns = ['Open', 'High', 'Low', 'Close', 'Volume']
+                df = df.astype(float)
+                
+                return df
+        
+        return None
+        
+    except Exception as e:
+        print(f"Error fetching Alpha Vantage daily data for {ticker}: {e}")
+        return None
+
+
+@st.cache_data(ttl=600)
 def get_stock_data(ticker: str, period: str = "1y") -> Optional[pd.DataFrame]:
-    """Fetch stock data using yfinance.
+    """Fetch stock data using Alpha Vantage or yfinance (fallback).
     
     Args:
         ticker: Stock ticker symbol
@@ -138,11 +188,41 @@ def get_stock_data(ticker: str, period: str = "1y") -> Optional[pd.DataFrame]:
         DataFrame with OHLCV data or None if failed
     """
     try:
-        stock = yf.Ticker(ticker)
-        df = stock.history(period=period)
+        # Determine Alpha Vantage output size based on period
+        if period in ['1mo', '3mo']:
+            outputsize = 'compact'  # 100 days
+        else:
+            outputsize = 'full'  # 20+ years
+        
+        # Try Alpha Vantage first
+        df = get_alpha_vantage_daily(ticker, outputsize)
         
         if df is not None and not df.empty:
+            # Filter to requested period
+            period_days = {
+                "1mo": 30,
+                "3mo": 90,
+                "6mo": 180,
+                "1y": 365,
+                "2y": 730,
+                "5y": 1825,
+                "max": 7300
+            }
+            
+            days = period_days.get(period, 365)
+            cutoff_date = datetime.now() - timedelta(days=days)
+            df = df[df.index >= cutoff_date]
+            
             return df
+        
+        # Fallback to yfinance if available
+        if YFINANCE_AVAILABLE:
+            stock = yf.Ticker(ticker)
+            df = stock.history(period=period)
+            
+            if df is not None and not df.empty:
+                return df
+        
         return None
             
     except Exception as e:
@@ -229,9 +309,14 @@ def get_stock_info(ticker: str) -> Optional[Dict]:
         av_overview = get_alpha_vantage_overview(ticker)
         av_quote = get_alpha_vantage_quote(ticker)
         
-        # Get yfinance data as supplement
-        stock = yf.Ticker(ticker)
-        yf_info = stock.info if stock else {}
+        # Get yfinance data as supplement (if available)
+        yf_info = {}
+        if YFINANCE_AVAILABLE:
+            try:
+                stock = yf.Ticker(ticker)
+                yf_info = stock.info if stock else {}
+            except:
+                yf_info = {}
         
         # Merge data from both sources
         info = {}
