@@ -156,8 +156,8 @@ def display_colored_table(df: pd.DataFrame, height: int = 600):
     }
     /* Ensure Rating column has enough width */
     .dataframe th:nth-child(2), .dataframe td:nth-child(2) {
-        min-width: 120px;
-        width: 120px;
+        min-width: 130px;
+        width: 130px;
     }
     /* Company column */
     .dataframe th:nth-child(1), .dataframe td:nth-child(1) {
