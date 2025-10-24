@@ -528,9 +528,10 @@ def show_company_detail(company_name: str, ticker: str, df_all: pd.DataFrame):
     
     # Back button
     st.markdown("---")
-    if st.button("Back to All Trials"):
+    if st.button("Back to Public Companies"):
         st.session_state['view'] = 'main'
         st.session_state['selected_company'] = None
+        st.session_state['show_public_only'] = True  # Set to show only public companies
         st.rerun()
 
 
@@ -577,11 +578,18 @@ python scripts/train_model.py
     public_company_count = df["ticker"].notna().sum()
     total_trials = len(df)
     st.sidebar.markdown("### Company Type")
+    # Check if we should show public companies only (from back button)
+    default_public_only = st.session_state.get('show_public_only', False)
+    
     show_public_only = st.sidebar.checkbox(
         f"Show only public companies ({public_company_count} of {total_trials} trials)",
-        value=False,
+        value=default_public_only,
         help="Filter to show only trials from publicly traded biotech/pharma companies with stock tickers"
     )
+    
+    # Clear the session state after using it
+    if 'show_public_only' in st.session_state:
+        del st.session_state['show_public_only']
     st.sidebar.markdown("---")
     
     # Phase filter
